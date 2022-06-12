@@ -1,5 +1,5 @@
 # Uniview-OpenStack-Portal
-The current repo is for artifacts and install manual for successfuly deploying ComputingStack Uniview Openstack Portal. It includes the artifacts needed except docker image, such as kubernetes deploy helm chart, docker-compose, configuration and Database releated scripts, process etc, order to stand up a proper cloud portal integration.
+The current repo is a place for artifacts and install manual, discussion and issues etc, in order to  successfuly deploya ComputingStack Uniview Openstack Portal. It includes the artifacts needed except docker image, such as kubernetes deploy helm chart, docker-compose, configuration and Database releated scripts, process etc, order to stand up a proper cloud portal integration.
 
 Any questions and suggestions are appreciated!
 
