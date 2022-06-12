@@ -1,0 +1,37 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: '{{ .Values.app_name }}'
+  namespace: '{{ .Values.name_space }}'
+  labels:
+    app: uniview  
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: uniview-spec
+  template:
+    metadata:
+      labels:
+        app: uniview-spec
+    spec:
+      containers:
+        - name: uniview-portal
+          image: computingstack/uniview-portal-enterprise:latest
+          imagePullPolicy: Always
+          ports:
+          - containerPort: 3006
+            name: http-web
+            protocol: TCP
+            #imagePullSecrets:
+            #- name: uniview-registry 
+          volumeMounts:
+            - name: config-volume
+              mountPath: "/usr/src/app/conf"
+      imagePullSecrets:
+        - name: uniview-registry 
+      volumes:      
+        - name: config-volume
+          configMap:
+            name: uniview-config2   

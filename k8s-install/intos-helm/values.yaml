@@ -1,0 +1,17 @@
+name_space: univew
+imageRegistry: '10.10.10.131:5000'
+imageUser:  computingstack       
+imagePass: Intos123$
+app_name: portal
+db_host: "192.168.2.17"
+db_user: univew
+db_password: shan
+db_database: univew
+keystone_host: "192.168.2.17"
+keystone_port: 5000
+os_auth_user: univew
+os_auth_pass: univew
+os_auth_project: univew
+ceph_api_url: "https:/xxxx:8431"
+univew_key: "xxxx"
+

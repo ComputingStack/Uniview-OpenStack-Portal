@@ -1,0 +1,15 @@
+name_space: uniview
+imageRegistry: '10.10.10.131:5000'
+imageUser:  computingstack       
+imagePass: Intos123$
+app_name: portal
+db_host: "192.168.2.17"
+db_user: uniview
+db_password: xxx
+db_database: uniview
+keystone_host: "192.168.2.17"
+keystone_port: 5000
+os_auth_user: uniview
+os_auth_pass: xxxx
+os_auth_project: uniview
+

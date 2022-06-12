@@ -1,0 +1,9 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: 'uniview-portal-db'
+  namespace: '{{.Values.name_space}}'
+spec:
+  type: ExternalName
+  externalName: 192.168.2.17

@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: portal-service2
+  namespace: '{{.Values.name_space}}'
+spec:
+  selector:
+    app: uniview-spec
+  ports:
+    - protocol: TCP
+      port: 3006
+      targetPort: 3006
+      nodePort: 30007
+  type: NodePort

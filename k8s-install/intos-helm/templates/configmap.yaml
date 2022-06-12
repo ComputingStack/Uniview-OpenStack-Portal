@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: uniview-config2
+  namespace: uniview
+data:
+  uniview.json: 
+    '{
+        "db":{
+                "host": "{{.Values.db_host}}",
+                "user": "{{.Values.db_user}}",
+                "password": "{{.Values.db_password}}",
+                "database": "{{.Values.db_database}}"
+        },
+        "keystone_host": "{{.Values.keystone_host}}",
+        "keystone_port": "{{.Values.keystone_port}}",
+        "os_auth_user": "{{.Values.os_auth_user}}",
+        "os_auth_pass": "{{.Values.os_auth_pass}}",
+        "os_auth_project": "{{.Values.os_auth_project}}"
+        "uniview_key": "{{.Values.uniview_key}}",
+        "ceph_api_url": "{{.Value.ceph_api_url}}"
+    }'
+
