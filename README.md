@@ -18,7 +18,9 @@ Step 2: Prepare docker host with necessary docker and docker-compose preinstalle
 
 Step 3: Prepare mysql or maria database engine or reuse any of those pre-created
 
-Step 4: Docker service is up
+Step 4: create database and user, grant the user to access the database
+
+Step 5: compose uniview.json and Docker service is up
 
 # Get Started with Kubernetes helm charts
 
@@ -28,4 +30,6 @@ Step 2: Prepare Kubernetes cluster or get proper access for where to host your p
 
 Step 3: Prepare mysql or maria database engine or reuse any of those pre-created
 
-Step 4: K8s service is up
+Step 4: create database and user, grant the user to access the database
+
+Step 5: K8s service is up
