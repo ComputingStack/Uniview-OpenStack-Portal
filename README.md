@@ -11,6 +11,8 @@ The reposition and git hub serve as well a ticketing system for logging new issu
 2. Visit http://www.computingstack.com, or contact admin@computingstack.com!
 
 # Get Started with docker-compose
+Below process are applicable to both Uniview free edition (or called based edition) and enterprise 
+edition
 
 Step 1: OpenStack backend is up. The minimal requirement is to have Keystone running.
 
@@ -23,6 +25,8 @@ Step 4: create database and user, grant the user to access the database from doc
 Step 5: compose uniview.json and Docker service is up
 
 # Get Started with Kubernetes helm charts
+Below process are applicable to both Uniview free edition (or called based edition) and enterprise 
+edition
 
 Step 1: OpenStack backend is up. The minimal requirement is to have Keystone running.
 
