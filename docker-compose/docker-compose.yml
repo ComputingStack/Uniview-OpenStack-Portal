@@ -1,7 +1,7 @@
 version: '3'
 services:
   portal:
-    image: computingstack/uniview-portal-enterprise:latest
+    image: computingstack/uniview-openstack-frontends:latest
     ports:
     - "3006:3006"
     environment:
