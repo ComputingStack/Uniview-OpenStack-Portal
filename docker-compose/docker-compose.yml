@@ -4,11 +4,11 @@ services:
     image: computingstack/uniview-openstack-frontends:latest
     ports:
     - "3006:3006"
-    environment:
-      REGISTRY_AUTH: htpasswd
-      REGISTRY_AUTH_HTPASSWD_REALM: Registry
-      REGISTRY_AUTH_HTPASSWD_PATH: /auth/registry.password
-      REGISTRY_STORAGE_FILESYSTEM_ROOTDIRECTORY: /data
+    #environment:
+    #  REGISTRY_AUTH: htpasswd
+    #  REGISTRY_AUTH_HTPASSWD_REALM: Registry
+    #  REGISTRY_AUTH_HTPASSWD_PATH: /auth/registry.password
+    #  REGISTRY_STORAGE_FILESYSTEM_ROOTDIRECTORY: /data
     volumes:
       - ./conf:/usr/src/app/conf
     deploy:
