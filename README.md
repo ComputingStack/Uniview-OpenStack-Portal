@@ -19,9 +19,9 @@ edition
 Prerequistes:
 1: OpenStack backend is up. The minimal requirement is to have Keystone running.
 
-2: Prepare docker host with necessary docker and docker-compose preinstalled
+2: Prepare docker host with necessary docker and docker-compose (Standalone is ok) preinstalled
 
-3: Prepare mysql or maria database engine or reuse any of those pre-created
+3: Prepare mysql or maria database engine or reuse any of those pre-created, such as install by "sudo apt install mysql-server" on a Ubuntu host
 
 Step 1: create database and user, grant the user to access the database from docker hosts
 
