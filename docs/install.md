@@ -24,7 +24,7 @@ git clone https://github.com/ComputingStack/Uniview-OpenStack-Portal.git
 
 cd ~/Uniview-OpenStack-Portal/docker-compose
 
-edit conf/univew.json with necessary above database and openstack access
+edit conf/univew.json with necessary above database and openstack access info at step 2 and 3
 
 5. bring service up
 
