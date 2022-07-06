@@ -12,19 +12,20 @@ The reposition and git hub serve as well a ticketing system for logging new issu
 1. Leave question, or comments on the current github pages! Our community manager will hop on and respond shortly!
 2. Visit http://www.computingstack.com, or contact admin@computingstack.com!
 
-# Get Started with docker-compose
+# Get Started with docker-compose with just a couple easy steps
 Below process are applicable to both Uniview free edition (or called based edition) and enterprise 
 edition
 
-Step 1: OpenStack backend is up. The minimal requirement is to have Keystone running.
+Prerequistes:
+1: OpenStack backend is up. The minimal requirement is to have Keystone running.
+2: Prepare docker host with necessary docker and docker-compose preinstalled
+3: Prepare mysql or maria database engine or reuse any of those pre-created
 
-Step 2: Prepare docker host with necessary docker and docker-compose preinstalled
+Step 1: create database and user, grant the user to access the database from docker hosts
 
-Step 3: Prepare mysql or maria database engine or reuse any of those pre-created
+Step 2: compose uniview.json 
 
-Step 4: create database and user, grant the user to access the database from docker hosts
-
-Step 5: compose uniview.json and Docker service is up
+Step 3: Service is up: "docker-compose up"
 
 # Get Started with Kubernetes helm charts
 Below process are applicable to both Uniview free edition (or called based edition) and enterprise 
