@@ -41,7 +41,9 @@ Step 4: create database and user, grant the user to access the database from K8s
 Step 5: K8s service is up
 
 # Resources:
-Install Demo: 
+Uniview Demo: https://www.youtube.com/channel/UCoTpDHR9JGQHIWfh0XF_5yQ
+
 Install docs: https://github.com/ComputingStack/Uniview-OpenStack-Portal/tree/main/docs
+
 Customization Docs: 
 
