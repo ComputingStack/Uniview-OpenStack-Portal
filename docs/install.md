@@ -19,7 +19,9 @@ CREATE DATABASE uniview; CREATE USER 'uniview'@'%' IDENTIFIED BY 'password'; GRA
 
 
 4. Prepare your codes:
+
 git clone https://github.com/ComputingStack/Uniview-OpenStack-Portal.git
+
 cd ~/Uniview-OpenStack-Portal/docker-compose
 
 edit conf/univew.json with necessary above database and openstack access
