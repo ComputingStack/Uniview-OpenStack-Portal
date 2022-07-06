@@ -45,7 +45,9 @@ Step 5: K8s service is up
 
 # Resources:
 Uniview Demo: https://www.youtube.com/channel/UCoTpDHR9JGQHIWfh0XF_5yQ
+
 Uniview install demo with docker-compose: https://youtu.be/KLinQ-vprPk
+
 Install docs: https://github.com/ComputingStack/Uniview-OpenStack-Portal/tree/main/docs
 
 Customization Docs: 
