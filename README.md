@@ -29,6 +29,8 @@ Step 2: compose uniview.json
 
 Step 3: Service is up: "docker-compose up"
 
+Further details, please refer to: https://github.com/ComputingStack/Uniview-OpenStack-Portal/tree/main/docs
+
 # Get Started with Kubernetes helm charts
 Below process are applicable to both Uniview free edition (or called based edition) and enterprise 
 edition
