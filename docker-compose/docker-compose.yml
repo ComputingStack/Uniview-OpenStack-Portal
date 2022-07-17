@@ -46,7 +46,7 @@ services:
       start_period: 20s
       timeout: 10s
     depends_on:
-      portal1:
+      uniview1:
         condition: service_healthy
     environment:
             #REGISTRY_AUTH: htpasswd
