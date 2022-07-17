@@ -16,7 +16,7 @@
     ceph_api_url: http://1.2.3.4:8090
     ceph_api_user: computingstack
     ceph_api_pass: your_pass
-
+    listen_port: "3006"
   tasks:
     - name: print out info
       debug: msg={{ groups['uniview'][0]  }}
@@ -43,7 +43,7 @@
         auto_remove: false
 
         ports:
-          - "3008:3006"
+          - "{{ listen_port }}:3006"
         env:
           db_host: "{{ db_host }}"
           db_user: "{{ db_user }}"
