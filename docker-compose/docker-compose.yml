@@ -1,6 +1,6 @@
 version: '3'
 services:
-  portal1:
+  uniview1:
     image: computingstack/uniview-openstack-frontends:latest
     ports:
     - "3006:3006"
@@ -10,13 +10,24 @@ services:
       retries: 5
       start_period: 20s
       timeout: 10s
-    #environment:
-    #  REGISTRY_AUTH: htpasswd
-    #  REGISTRY_AUTH_HTPASSWD_REALM: Registry
-    #  REGISTRY_AUTH_HTPASSWD_PATH: /auth/registry.password
-    #  REGISTRY_STORAGE_FILESYSTEM_ROOTDIRECTORY: /data
-    volumes:
-      - ./conf:/usr/src/app/conf
+    environment:
+            #REGISTRY_AUTH: htpasswd
+            #REGISTRY_AUTH_HTPASSWD_REALM: Registry
+            #REGISTRY_AUTH_HTPASSWD_PATH: /auth/registry.password
+            #REGISTRY_STORAGE_FILESYSTEM_ROOTDIRECTORY: /data
+      db_host: 192.168.2.17
+      db_user: uniview
+      db_password: your_pass
+      db_database: uniview
+      keystone_host: 192.168.2.17
+      keystone_port: 5000
+      os_auth_user: intos
+      os_auth_pass: intos
+      os_auth_project: intos
+      uniview_key: xxxxx
+      ceph_api_url: http://1.2.3.4:8090
+      ceph_api_user: computingstack
+      ceph_api_pass: your_pass
     deploy:
       restart_policy:
         condition: on-failure
@@ -24,7 +35,7 @@ services:
         #max_attempts: 3
         window: 120s
     restart: always
-  portal2:
+  uniview2:
     image: computingstack/uniview-openstack-frontends:latest
     ports:
     - "3007:3006"
@@ -37,11 +48,24 @@ services:
     depends_on:
       portal1:
         condition: service_healthy
-    #environment:
-    #  REGISTRY_AUTH: htpasswd
-    #  REGISTRY_AUTH_HTPASSWD_REALM: Registry
-    #  REGISTRY_AUTH_HTPASSWD_PATH: /auth/registry.password
-    #  REGISTRY_STORAGE_FILESYSTEM_ROOTDIRECTORY: /data
+    environment:
+            #REGISTRY_AUTH: htpasswd
+            #REGISTRY_AUTH_HTPASSWD_REALM: Registry
+            #REGISTRY_AUTH_HTPASSWD_PATH: /auth/registry.password
+            #REGISTRY_STORAGE_FILESYSTEM_ROOTDIRECTORY: /data
+      db_host: 192.168.2.17
+      db_user: uniview
+      db_password: your_pass
+      db_database: uniview
+      keystone_host: 192.168.2.17
+      keystone_port: 5000
+      os_auth_user: intos
+      os_auth_pass: intos
+      os_auth_project: intos
+      uniview_key: xxxxx
+      ceph_api_url: http://1.2.3.4:8090
+      ceph_api_user: computingstack
+      ceph_api_pass: your_pass
     volumes:
       - ./conf:/usr/src/app/conf
     deploy:
