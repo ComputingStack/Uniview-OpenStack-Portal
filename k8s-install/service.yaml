@@ -1,13 +1,40 @@
-apiVersion: v1
-kind: Service
+---
+apiVersion: apps/v1
+kind: Deployment
 metadata:
-  name: portal-service2
+  name: '{{ .Values.app_name }}'
+  namespace: '{{ .Values.name_space }}'
+  labels:
+    app: uniview
 spec:
+  replicas: 2
   selector:
-    app: uniview-spec
-  ports:
-    - protocol: TCP
-      port: 3006
-      targetPort: 3006
-      nodePort: 30007
-  type: NodePort
+    matchLabels:
+      app: uniview
+  template:
+    metadata:
+      labels:
+        app: uniview
+    spec:
+      containers:
+        - name: uniview-portal
+          image: computingstack/univew-openstack-portal:latest
+          imagePullPolicy: Always
+          ports:
+          - containerPort: 3006
+            name: http-web
+            protocol: TCP
+            #imagePullSecrets:
+            #- name: uniview-registry
+          env:
+            -	name: db_host
+              value: {{ .Values.db_host }} 
+            -	name: db_user
+              value: {{ .Values.db_user }} 
+            -	name: db_pass
+              value: {{ .Values.db_pass }} 
+            -	name: db_user
+              value: {{ .Values.db_user }} 
+              
+-	
+
