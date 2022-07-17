@@ -1,0 +1,66 @@
+- hosts: uniview
+  #become: true
+  serial: 1
+  vars:
+    uniview_image: computingstack/uniview-openstack-frontends:latest    
+    db_host: 10.10.10.2
+    db_user: uniview
+    db_password: your_password
+    db_database: uniview
+    keystone_host: 192.168.1.2
+    keystone_port: "5000"
+    os_auth_user: intos
+    os_auth_pass: intos
+    os_auth_project: service
+    uniview_key: xxxxxx
+    ceph_api_url: http://1.2.3.4:8090
+    ceph_api_user: computingstack
+    ceph_api_pass: your_pass
+
+  tasks:
+    - name: print out info
+      debug: msg={{ groups['uniview'][0]  }}
+
+    - name: print 2
+      debug: msg={{ ansible_python_interpreter   }}
+      
+    - name: yum install pip3
+      become: yes
+      yum:
+        name: python3-pip
+        state: present
+
+    - name: pip install
+      pip:
+        executable: pip3
+        name: docker
+
+    - name: deploy uniview docker container
+      docker_container:
+        image: "{{ uniview_image }}"
+        name: uniview
+        state: started
+        auto_remove: false
+
+        ports:
+          - "3008:3006"
+        env:
+          db_host: "{{ db_host }}"
+          db_user: "{{ db_user }}"
+          db_password: "{{ db_password }}"
+          db_database: "{{ db_database }}"
+          keystone_host: "{{ keystone_host }}"
+          keystone_port: "{{ keystone_port }}"
+          os_auth_user: "{{ os_auth_user }}"
+          os_auth_pass: "{{ os_auth_pass }}"
+          os_auth_project: "{{ os_auth_project }}"
+          uniview_key: "{{ uniview_key }}"
+          ceph_api_url: "{{ ceph_api_url }}"
+          ceph_api_user: "{{ ceph_api_user }}"
+          ceph_api_pass: "{{ ceph_api_pass }}"
+        healthcheck:
+          test: curl --fail http://localhost:3006/getVersion || exit 1
+          interval: 90s
+          retries: 5
+          start_period: 20s
+          timeout: 10s
