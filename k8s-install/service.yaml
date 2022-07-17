@@ -33,8 +33,25 @@ spec:
               value: {{ .Values.db_user }} 
             -	name: db_pass
               value: {{ .Values.db_pass }} 
-            -	name: db_user
-              value: {{ .Values.db_user }} 
-              
+            -	name: db_database
+              value: {{ .Values.db_database }}             
+            - name: keystone_host
+              value: {{ .Values.keystone_host }}
+            - name: keystone_port
+              value: {{ .Values.keystone_port }}
+            - name: os_auth_user
+              value: {{ .Values.os_auth_user }}
+            - name: os_auth_pass
+              value: {{ .Values.os_auth_pass }}
+            - name: os_auth_project
+              value: {{ .Values.os_auth_project }}
+            - name: uniview_key
+              value: {{ .Values.uniview_key }}
+            - name: ceph_api_url
+              value: {{ .Values.ceph_api_url }}
+            - name: ceph_api_user
+              value: {{ .Values.ceph_api_user }}
+            - name: ceph_api_pass
+              value: {{ .Values.ceph_api_pass }}
 -	
 
