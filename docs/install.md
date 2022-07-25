@@ -14,14 +14,20 @@ mysql -h host -u uniview -ppassword
 
 3. Gather your OpenStack user access credentials, for example
 
-"keystone_host": "192.168.1.11",
-"keystone_port": "5000",
+"keystone_auth_url": "http://192.168.1.11:3539",
+"os_interface_type": internal
 "os_auth_user": "uniview",
 "os_auth_pass": "pass",
 "os_auth_project": "uniview",
 
+In above credentials:
 
-4. Prepare your codes:
+"keystone_auth_url" is keystone host address used to communicate with keystone. It can be either admin, internal or public endpoints in the format of above. It does support both https and http
+
+"os_interface_type" is the type of endpoint the uniview is intended to use to communicate with other OpenStack backends, and takes values of "public", ""such as nova and cinder. The choice of interface type need based on the strategy of your clouds and bottom line network of the selected endpoints is accessible from the host of Uniview. In most cases, public provides best accessibility, but internal and admin may be more efficient as with internal network. 
+
+
+4. Prepare your install environment by cloing current repo:
 
 git clone https://github.com/ComputingStack/Uniview-OpenStack-Portal.git
 
