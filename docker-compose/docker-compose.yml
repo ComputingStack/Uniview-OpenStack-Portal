@@ -19,8 +19,8 @@ services:
       db_user: uniview
       db_password: your_pass
       db_database: uniview
-      keystone_host: 192.168.2.17
-      keystone_port: 5000
+      keystone_auth_url: "https://1.1.1.1 or http://1.1.1.1:5000"
+      os_interface_type: admin
       os_auth_user: intos
       os_auth_pass: intos
       os_auth_project: intos
