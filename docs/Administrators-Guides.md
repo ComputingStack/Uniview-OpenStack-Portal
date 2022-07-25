@@ -12,7 +12,11 @@ However it's worth to mention that uniview portal is considered as OpenStack roo
 
 ## User credential needs
 
-In order to render the best user experiences, and facilitate various communications, Uniview portal need detects the capability, version of API etc, so that it requires an admin credential to talk with keystone and other components.  For particular use case, please contact admin@computingstack.com for different solutions.
+In order to render the best user experiences, and facilitate various communications, Uniview portal need detects the capability, user creation, MFA binding, version of API etc, so that it requires an admin credential to talk with keystone and other components.  For particular use case, please contact admin@computingstack.com for different solutions.
+
+## MFA support
+
+MFA is one of most desireable security features. Uniview has a best practice of managing MFA, including user self-sufficident of binding MFA, combination of application credentials when passwork stops working etc. For the details, please consult support team of ComputingsTack.
 
 # About Customizations
 
