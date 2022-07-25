@@ -1,9 +1,15 @@
+# Multiple Regions Support
 
-### How to Customize Logos and other business related info
+Uniview out of box supports most complex deploy, such as multile regions when many public clouds or high available enterprise cloud need. User can choose to select region and project easily at the user console.
+
+# OpenStack backend support TLS 
+Uniview provides options for administrator to choose the interface type OpenStack supports among "public", "internal", "admin". Uniview has full self-adaptation based on the nature of the endpoint, such as TLS or plain HTTP for the communication.  Howerver it's expected to have consistence of such choice, for example, when internal is selected, for all endpoints other than keystone, the internal will be used. That may require consistent strategy across different componenents of OpenStack.
+
+# How to Customize Logos and other business related info
 
 Univew portal can be easily customized with logos, privacy statements etc terms of use with just a click. 
 
-# Customize master logo on sign in page
+## Customize master logo on sign in page
 
 - Sign in with user with role "admin"
 - However user circle on the top right, click the "setting admin"
@@ -12,7 +18,7 @@ Univew portal can be easily customized with logos, privacy statements etc terms 
 - Sign out, the login page will show up the newly uploaded logo
 - If multiple docker services are running, other portal docker service needs be restarted to pick up the newer value
 
-# customize main logo on the top left after sign in
+## customize main logo on the top left after sign in
 
 - Sign in with user with role "admin"
 - However user circle on the top right, click the "setting admin"
@@ -21,7 +27,7 @@ Univew portal can be easily customized with logos, privacy statements etc terms 
 - Sign out and sign in, the main page logo will show up
 - If multiple docker services are running, other portal docker service needs be restarted to pick up the newer value
 
-# customize "Terms of Use"
+## customize "Terms of Use"
 Text containing hyperlink of external URL is supported. 
 - Sign in with user with role "admin"
 - However user circle on the top right, click the "setting admin"
@@ -30,7 +36,7 @@ Text containing hyperlink of external URL is supported.
 - Sign out, and the terms of use has an external link to the statement
 - If multiple docker services are running, other portal docker service needs be restarted to pick up the newer value
 
-# Customize Privacy Policy
+## Customize Privacy Policy
 
 - Sign in with user with role "admin"
 - However user circle on the top right, click the "setting admin"
