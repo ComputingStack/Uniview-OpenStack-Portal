@@ -1,11 +1,20 @@
-# Multiple Regions Support
+# About Deployments
+
+## Multiple Regions Support
 
 Uniview out of box supports most complex deploy, such as multile regions when many public clouds or high available enterprise cloud need. User can choose to select region and project easily at the user console.
 
-# OpenStack backend support TLS 
+## OpenStack backend endpoint type (https vs http) 
+
 Uniview provides options for administrator to choose the interface type OpenStack supports among "public", "internal", "admin". Uniview has full self-adaptation based on the nature of the endpoint, such as TLS or plain HTTP for the communication.  Howerver it's expected to have consistence of such choice, for example, when internal is selected, for all endpoints other than keystone, the internal will be used. That may require consistent strategy across different componenents of OpenStack.
 
-# How to Customize Logos and other business related info
+However it's worth to mention that uniview portal is considered as OpenStack root level component, hence it's recommanded to be deployed as close as possible to the controller nodes, even though it's possible to have such portal run in a public network.
+
+## User credential needs
+
+In order to render the best user experiences, and facilitate various communications, Uniview portal need detects the capability, version of API etc, so that it requires an admin credential to talk with keystone and other components.  For particular use case, please contact admin@computingstack.com for different solutions.
+
+# About Customizations
 
 Univew portal can be easily customized with logos, privacy statements etc terms of use with just a click. 
 
