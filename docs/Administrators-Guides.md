@@ -57,3 +57,5 @@ Text containing hyperlink of external URL is supported.
 - Provide the text of hyperlink of a URL, click submit
 - Sign out, and the terms of use has an external link to the statement
 - If multiple docker services are running, other portal docker service needs be restarted to pick up the newer value
+
+# Known Issues
