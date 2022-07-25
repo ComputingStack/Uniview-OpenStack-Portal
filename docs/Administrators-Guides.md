@@ -16,7 +16,7 @@ In order to render the best user experiences, and facilitate various communicati
 
 ## MFA support
 
-MFA is one of most desireable security features. Uniview has a best practice of managing MFA, including user self-sufficident of binding MFA, combination of application credentials when passwork stops working etc. For the details, please consult support team of ComputingsTack.
+MFA is one of most desireable security features. Uniview has formed a best practice of managing MFA, including user self-sufficident of binding MFA, combination of application credentials when passwork stops working and backend tuning etc. For the details, please consult support team of ComputingsTack.
 
 # About Customizations
 
