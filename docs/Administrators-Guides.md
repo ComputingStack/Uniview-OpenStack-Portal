@@ -6,7 +6,7 @@ Uniview out of box supports most complex deploy, such as multile regions when ma
 
 ## OpenStack backend endpoint type (https vs http) 
 
-Uniview provides options for administrator to choose the interface type OpenStack supports among "public", "internal", "admin". Uniview has full self-adaptation based on the nature of the endpoint, such as TLS or plain HTTP for the communication.  Howerver it's expected to have consistence of such choice, for example, when internal is selected, for all endpoints other than keystone, the internal will be used. That may require consistent strategy across different componenents of OpenStack.
+Uniview provides options for administrator to choose the interface type OpenStack supports among "public", "internal" and "admin". Uniview has implemented self-adaptation based on the nature of the endpoint, such as TLS or plain HTTP, for the communication.  Howerver it's expected to have the consistency of such choice, for example, when internal is selected, for all endpoints other than keystone, the internal shall be used in the same way. That may require consistent strategy across different componenents of OpenStack. Arbitrary endpoint strategy may end up some issues.
 
 However it's worth to mention that uniview portal is considered as OpenStack root level component, hence it's recommanded to be deployed as close as possible to the controller nodes, even though it's possible to have such portal run in a public network.
 
