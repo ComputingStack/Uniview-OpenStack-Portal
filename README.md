@@ -3,7 +3,7 @@ The current repo is a place for artifacts and install manual, discussion and iss
 
 Computingstack Uniview portal is an alternative dashboard to OpenStack Horizon for frontend premium solutions! One major drive of Uniview is the User Experience, so that OpenStack cloud can match up itself by providing users visual enriched experiences, everything just one click away, comprehensive to meet a modern enterprise would need in terms of infrastructure and clouds stand for! Uniview is also more focused on user constant needs in day 2 activities, such as providing tools for users workload troubleshooting, metrics and dashboard, cross resources visualized view of instance, volume, connectivities, kubenetes container infa, object store, load balancer, database and much more. 
 
-From use cases point of view, Uniview works with all different OpenStack install, but it is known best fitting to the needs of enterprise cloud with relative hierachical organization, high security and better user experiences, as most of command requirements are met out of box. It meet majority of the needs of many Public Clouds too, such as most desireable billing solutions, user recruitment/registration and tenant management, public cloud security needs etc.
+From use cases point of view, Uniview works with all different OpenStack installs, but it is known best fitting to the needs of enterprise cloud with relative hierachical organization, high security and better user experiences, as most of common requirements are met out of box. It meets majority of the needs of many Public Clouds too, such as most desireable billing solutions, user recruitment/registration and tenant management, public cloud security needs etc.
 
 Any questions and suggestions are appreciated!
 
