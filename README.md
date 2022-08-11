@@ -26,7 +26,7 @@ Prerequistes:
 
 Step 1: create database and user, grant the user to access the database from docker hosts
 
-Step 2: compose uniview.json 
+Step 2: edit the credentials needed in the docker-compose file as environment variables 
 
 Step 3: Service is up: "docker-compose up"
 
