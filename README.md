@@ -13,7 +13,7 @@ The reposition and git hub serve as well a ticketing system for logging new issu
 2. Visit http://www.computingstack.com, or contact admin@computingstack.com!
 
 # Get Started with docker-compose with just a couple easy steps
-Docker-compose is the best get-started step for Uniview install. Once single docker host install is successfully, various other deployments will be just a short adjustment to that particular hosting requirements. Below process are applicable to both Uniview free edition (or called based edition) and enterprise 
+Docker-compose is generic and the best get-started step for Uniview install. Once single docker host install is successful, various other deployments will be just a short adjustment to that particular hosting requirements over local docker install process. Below process are applicable to both Uniview free edition (or called based edition) and enterprise 
 edition
 
 Prerequistes:
