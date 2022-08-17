@@ -18,6 +18,10 @@ In order to render the best user experiences, and facilitate various communicati
 
 MFA is one of most desireable security features. Uniview has formed a best practice of managing MFA, including user self-sufficident of binding MFA, combination of application credentials when passwork stops working and backend tuning etc. For the details, please consult support team of ComputingsTack.
 
+## Log Level Support
+
+Uniview portal service has configurable level of logging: info, debug. To change the option, user needs pass corresponding environment variables: log_level with value of info or debug.
+
 # About Customizations
 
 Univew portal can be easily customized with logos, privacy statements etc terms of use with just a click. 
