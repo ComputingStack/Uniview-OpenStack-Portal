@@ -29,6 +29,7 @@ services:
       ceph_api_user: computingstack
       ceph_api_pass: your_pass
       concurrent_sessions: 6
+      log_level: info
     deploy:
       restart_policy:
         condition: on-failure
