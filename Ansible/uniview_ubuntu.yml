@@ -17,6 +17,8 @@
     ceph_api_user: computingstack
     ceph_api_pass: your_pass
     listen_port: "3006"
+    concurrent_sessions: 6
+    log_level: info
   tasks:
     - name: print out info
       debug: msg={{ groups['uniview'][0]  }}
@@ -58,6 +60,8 @@
           ceph_api_url: "{{ ceph_api_url }}"
           ceph_api_user: "{{ ceph_api_user }}"
           ceph_api_pass: "{{ ceph_api_pass }}"
+          concurrent_sessions: "{{ concurrent_sessions }}"
+          log_level: "{{ log_level }}"
         healthcheck:
           test: curl --fail http://localhost:3006/getVersion || exit 1
           interval: 90s
