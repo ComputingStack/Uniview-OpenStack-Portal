@@ -30,6 +30,7 @@ services:
       ceph_api_pass: your_pass
       concurrent_sessions: 6
       log_level: info
+      prometheus_url: http://1.2.3.4:9090
     deploy:
       restart_policy:
         condition: on-failure
