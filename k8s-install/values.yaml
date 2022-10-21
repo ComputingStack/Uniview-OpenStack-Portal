@@ -7,10 +7,16 @@ db_host: "192.168.2.17"
 db_user: uniview
 db_password: xxx
 db_database: uniview
-keystone_host: "192.168.2.17"
-keystone_port: 5000
-os_auth_user: uniview
-os_auth_pass: xxxx
-os_auth_project: uniview
 prometheus_url: http://1.2.3.4:9100
-ceph_url: htts://1.2.3.4:8090
+keystone_auth_url: "https://1.1.1.1 or http://1.1.1.1:5000"
+os_interface_type: admin
+os_auth_user: intos
+os_auth_pass: intos
+os_auth_project: intos
+uniview_key: xxxxx
+ceph_api_url: http://1.2.3.4:8090
+ceph_api_user: computingstack
+ceph_api_pass: your_pass
+concurrent_sessions: 6
+log_level: info
+prometheus_url: http://1.2.3.4:9090
