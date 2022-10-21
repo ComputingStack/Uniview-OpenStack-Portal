@@ -19,6 +19,7 @@
     listen_port: "3006"
     concurrent_sessions: 6
     log_level: info
+    prometheus_url: http://1.2.3.4:9090
   tasks:
     - name: print out info
       debug: msg={{ groups['uniview'][0]  }}
