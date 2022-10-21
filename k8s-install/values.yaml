@@ -12,4 +12,5 @@ keystone_port: 5000
 os_auth_user: uniview
 os_auth_pass: xxxx
 os_auth_project: uniview
-
+prometheus_url: http://1.2.3.4:9100
+ceph_url: htts://1.2.3.4:8090
