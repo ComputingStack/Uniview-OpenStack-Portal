@@ -1,7 +1,7 @@
 # Univew Install with docker and docker compose
 
-
 1. Install Docker docker and docker-compose on your targeted docker host. An example is to follow: https://docs.docker.com/engine/install/
+ 
 
 2. Prepare MySql database or Maria Db
 
@@ -43,7 +43,13 @@ docker-compose up
 
 
 # Uniview Install with Ansible
+
+Uniview integration with Kolla Ansible can be as easy as just one more line of ansible to follow after Kolla ansible. It's highly recommanded to co-locate Uniview with the controller nodes where Kolla ansible installs OpenStack.
+
 1. Prerequisites: ansible, pip3, docker installed in targeted host server
+
+When Uniview is co-located with Kolla ansible hosting servers, those prerequisites are well satisfied. 
+
 2. Prepare MySql database or Maria Db
 
 To do so, an example is to install on an Ubuntu server with command: sudo apt install mysql-server. Once MySql is up, create databse:
@@ -79,7 +85,8 @@ edit uniview_ubuntu.yml with necessary above database and openstack access info 
 5. bring service up
 
 $ ansible-playbook -i ./ uniview_ubuntu.yml --connection=local
-if ansible run from different  host
+
+if ansible run from different  host, as as your Kolla ansible console server: 
 $ ansible-playbook -i ./ uniview_ubuntu.yml 
 
 6. Access your service at: http://host_ip:3006/
