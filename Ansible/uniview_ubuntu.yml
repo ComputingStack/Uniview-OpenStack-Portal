@@ -7,8 +7,8 @@
     db_user: uniview
     db_password: your_password
     db_database: uniview
-    keystone_host: 192.168.1.2
-    keystone_port: "5000"
+    keystone_auth_url: "https://2.2.4.3:5000"
+    os_interface_type: public
     os_auth_user: intos
     os_auth_pass: intos
     os_auth_project: service
@@ -52,8 +52,8 @@
           db_user: "{{ db_user }}"
           db_password: "{{ db_password }}"
           db_database: "{{ db_database }}"
-          keystone_host: "{{ keystone_host }}"
-          keystone_port: "{{ keystone_port }}"
+          keystone_auth_url: "{{ keystone_auth_url  }}"
+          os_interface_type: "{{ os_interface_type }}"
           os_auth_user: "{{ os_auth_user }}"
           os_auth_pass: "{{ os_auth_pass }}"
           os_auth_project: "{{ os_auth_project }}"
