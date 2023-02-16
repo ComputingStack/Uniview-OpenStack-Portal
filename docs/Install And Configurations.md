@@ -48,7 +48,7 @@ Uniview integration with Kolla Ansible can be as easy as just one more line of a
 
 1. Prerequisites: ansible, pip3, docker installed in targeted host server
 
-When Uniview is co-located with Kolla ansible hosting servers, those prerequisites are well satisfied. 
+When Uniview is co-located with Kolla ansible hosting servers, those prerequisites are well satisfied already. 
 
 2. Prepare MySql database or Maria Db
 
