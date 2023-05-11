@@ -23,9 +23,6 @@
   tasks:
     - name: print out info
       debug: msg={{ groups['uniview'][0]  }}
-
-    - name: print 2
-      debug: msg={{ ansible_python_interpreter   }}
       
     - name: apt install pip3
       become: yes
