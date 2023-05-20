@@ -46,7 +46,7 @@
         auto_remove: false
 
         ports:
-          - "{{ listen_port }}:3006"
+          - "3006:{{ listen_port }}"
         env:
           db_host: "{{ db_host }}"
           db_user: "{{ db_user }}"
