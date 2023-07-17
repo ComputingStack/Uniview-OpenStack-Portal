@@ -38,9 +38,11 @@
     - name: deploy uniview docker container
       docker_container:
         image: "{{ uniview_image }}"
-        name: uniview
+        name: uniview         
         state: started
         auto_remove: false
+        restart: yes
+        restart_policy: always
 
         ports:
           - "3006:{{ listen_port }}"
