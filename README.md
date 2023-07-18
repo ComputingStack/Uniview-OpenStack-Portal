@@ -11,7 +11,7 @@ The reposition and git hub serve as well a ticketing system for logging new issu
 
 # Pricing and Uniview Business Model
 
-With general understanding, the second question might be on business model, e.g. you might wonder if Uniview is open source or free edition. Considering there are entry level community portal such as Skyline and Horizon, and there are even some niche solutions, Uniview, due to its complexity and steep development curve, as enterprise ready solution, it's not free. The good news is that we strive to provide the best affordability vs the value added to our customers, and we provides flexibility to start with minimal upfront for selected partners too to lower your invest risk. On other hands, for such non-profit organizations, Uniview yes is license-free. Please just contact if there is a need. 
+With general understanding, the second question might be on business model, e.g. you might wonder if Uniview is open source or free edition. Considering there are entry level community portal such as Skyline and Horizon, and there are even some niche solutions, Uniview, due to its complexity and steep development curve, as enterprise ready solution, it's not free. The good news is that we strive to provide the best affordability vs the value added to our customers, and we provides flexibility for selected parters to start with minimal upfront too to lower your invest risk. On other hands, for such non-profit organizations, Uniview yes is license-free. Please just contact if there is a need. 
 
 # Get Help
 
