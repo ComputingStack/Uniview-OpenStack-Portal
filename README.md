@@ -12,7 +12,7 @@ The reposition and git hub serve as well a ticketing system for logging new issu
 # Get Help
 
 1. Leave question, or comments on the current github pages! Our community manager will hop on and respond shortly!
-2. Visit http://www.computingstack.com, or contact admin@computingstack.com!
+2. Visit https://www.computingstack.com, or contact admin@computingstack.com!
 
 # Get Started with docker-compose with just a couple easy steps
 Docker-compose is generic and the best get-started step for Uniview install. Once single docker host install is successful, various other deployments will be just a short adjustment to that particular hosting requirements over local docker install process. Below process are applicable to both Uniview free edition (or called based edition) and enterprise 
@@ -26,9 +26,9 @@ Prerequistes:
 
 3: Prepare mysql or maria database engine or reuse any of those pre-created, such as install by "sudo apt install mysql-server" on a Ubuntu host
 
-Step 1: create database and user, grant the user to access the database from docker hosts
+Step 1: Create database and user, grant the user to access the database from docker hosts
 
-Step 2: edit the credentials needed in the docker-compose file as environment variables 
+Step 2: Edit the credentials needed in the docker-compose file as environment variables 
 
 Step 3: Service is up: "docker-compose up"
 
@@ -42,9 +42,9 @@ Step 1: OpenStack backend is up. The minimal requirement is to have Keystone run
 
 Step 2: Prepare Kubernetes cluster or get proper access for where to host your portal service
 
-Step 3: Prepare mysql or maria database engine or reuse any of those pre-created
+Step 3: Prepare mysql or maria database engine or reuse any of those that was pre-created
 
-Step 4: create database and user, grant the user to access the database from K8s hosts
+Step 4: Create database and user, grant the user to access the database from K8s hosts
 
 Step 5: K8s service is up
 
