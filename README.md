@@ -9,6 +9,10 @@ Any questions and suggestions are appreciated!
 
 The reposition and git hub serve as well a ticketing system for logging new issue, tracking hisotrical issue, communication between Computingstack team and clients.
 
+# Pricing and Uniview Business Model
+
+With general understanding, the second question might be on business model, e.g. you might wonder if Uniview is open source or free edition. Considering there are entry level community portal such as Skyline and Horizon, and there are even some niche solutions, Uniview, due to its complexity and steep development curve, as enterprise ready solution, it's not free. The good news is that we strive to provide the best affordability vs the value added to our customers. On other hands, for such non-profit organizations, Uniview yes is license-free. Please contact if there is a need. 
+
 # Get Help
 
 1. Leave question, or comments on the current github pages! Our community manager will hop on and respond shortly!
