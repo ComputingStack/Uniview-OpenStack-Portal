@@ -1,6 +1,6 @@
 # How to Customize Logos and other business related info
 
-Univew portal can be easily customized with logos, privacy statements etc terms of use with just a click. 
+Univew portal can be easily customized with logos, privacy statements, email templates, terms of use and many others with just a click. 
 
 # Customize master logo on sign in page
 
@@ -11,7 +11,7 @@ Univew portal can be easily customized with logos, privacy statements etc terms 
 - Sign out, the login page will show up the newly uploaded logo
 - If multiple docker services are running, other portal docker service needs be restarted to pick up the newer value
 
-# customize main logo on the top left after sign in
+# Customize main logo on the top left after sign in
 
 - Sign in with user with role "admin"
 - However user circle on the top right, click the "setting admin"
@@ -20,7 +20,7 @@ Univew portal can be easily customized with logos, privacy statements etc terms 
 - Sign out and sign in, the main page logo will show up
 - If multiple docker services are running, other portal docker service needs be restarted to pick up the newer value
 
-# customize "Terms of Use"
+# Customize "Terms of Use"
 Text containing hyperlink of external URL is supported. 
 - Sign in with user with role "admin"
 - However user circle on the top right, click the "setting admin"
@@ -37,3 +37,11 @@ Text containing hyperlink of external URL is supported.
 - Provide the text of hyperlink of a URL, click submit
 - Sign out, and the terms of use has an external link to the statement
 - If multiple docker services are running, other portal docker service needs be restarted to pick up the newer value
+
+# Customize your outgoing email template
+- Git checkout the current repo
+- Get the folder email_templates/
+- Editing the contents (with HTML/CSS schema) 
+- Send back to Computingstack Support for the bundles (only contain the edited email templates)
+- Computingstack team will do sanity check and get back to you if any issue is found
+- Once all are confirmed, your email template will be replaced in your next docker image build
