@@ -105,6 +105,6 @@ In a critical install, it's recommanded to install 2+ docker instances or kubern
 ```
 backend backend-openmetal
     option httpchk GET /getVersion
-    server openmetal ip1:3006 check inter 180s
-    server openmetal2 ip2:3006 check inter 180s
+    server uniview1 ip1:3006 check inter 180s
+    server uniview2 ip2:3006 check inter 180s
 ```
