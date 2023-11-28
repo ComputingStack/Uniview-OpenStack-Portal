@@ -17,7 +17,7 @@ Test out if mysql can be acessible, execute command from docker host:
 3. Gather your OpenStack user access credentials, for example
 
 ```
-"keystone_auth_url": "http://192.168.1.11:3539",
+"keystone_auth_url": "http://192.168.1.11:5000",
 "os_interface_type": internal
 "os_auth_user": "uniview",
 "os_auth_pass": "pass",
