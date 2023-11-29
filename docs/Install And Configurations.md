@@ -103,7 +103,7 @@ $ ansible-playbook -i ./ uniview_ubuntu.yml
 In a critical install, it's recommanded to install 2+ docker instances or kubernetes Pods when deployed over Kubernetes cludster. In this case, an health check URI is provided to return 200 OK to serve the purpose to enable the health check function at your load balancer.  Below is an backend configuratino example when the LB is Haproxy by the nature, and you may tailur to your specific env however. 
 
 ```
-backend backend-openmetal
+backend backend-uniview
     option httpchk GET /getVersion
     server uniview1 ip1:3006 check inter 180s
     server uniview2 ip2:3006 check inter 180s
