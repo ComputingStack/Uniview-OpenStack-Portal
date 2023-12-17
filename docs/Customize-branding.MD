@@ -38,6 +38,13 @@ Text containing hyperlink of external URL is supported.
 - Sign out, and the terms of use has an external link to the statement
 - If multiple docker services are running, other portal docker service needs be restarted to pick up the newer value
 
+# Pick up sign in pages
+Univew has different sign in pages available for selection
+- Evaluate your logo, theme need
+- Pick up one of login1 vs login2 and let Computingstack Support team known
+- A new edition will be built with the option in your upcoming build 
+
+
 # Customize your outgoing email template
 - Git checkout the current repo
 - Get the folder email_templates/
