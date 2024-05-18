@@ -19,11 +19,11 @@ The reposition and git hub serve as well a ticketing system for logging new issu
 
 With above general understanding, the second question might be on business model, e.g. you might wonder if Uniview is open source or free edition. Uniview vision has been to enrich OpenStack ecosystem by providing a thin layer of proprietary over OpenStack, so users can have the perfect balance between Open-Source freedom and quality differentiators. We strive to provide the best affordability by this low maintenance, last mile solution, so that it doesn't change the nature of open source based solution overall. There are many features such as white labelling and self service discovering etc to configure itself etc to make Uniview  adaptable, eventually bring down cost.  Also Uniview has a process ready for quick per customer build packaging by compiling, docker image distribution, separate emai, theme, message, locale and language packs templates etc. With a few hours efforts for details clarifying, a customer can possibly get a fully cut-for per business packaging ready.
 
-Uniview has been incubated over many different requirements, developed in agile mode, and  polished to be perfect with partnerships. Hence it is expected to brings down the cost of your total E2E solution.  
+Uniview comes in with mission in mind to bring down the total cost of an open source cloud with necessary tools, utilites and filling last mile engineering gaps that open source community will not fill. Uniview has been developed and polished in agile mode through extensive industry partnerships. 
 
 You may also find Uniview is not a market promotion agreesive business. Yes, Uniview is more developers and fun driven. Infrastructure, esp Cloud has never been a quick process. Sustainability is the first priority that we pursue. We facilitate by providing many online necessary supports for self-paced testing, integration etc, and for serious OpenStack deploys, you will go only when you feel confident.  An agile  team if not fully standby beforehands, will provide services when the need comes in.
 
-There are also some free editions provided, and free license for non-profit organizations. Just write to us for more details!
+There are also some free editions provided, and free license for non-profit organizations. Just write to us for more details or a quote!
 
 # Get Help
 
