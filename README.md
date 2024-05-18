@@ -23,7 +23,7 @@ Uniview comes in with mission in mind to bring down the total cost of an open so
 
 You may also find Uniview is not a market promotion agreesive business. Yes, Uniview is more developers and fun driven. Infrastructure, esp Cloud has never been a quick process. Sustainability is the first priority that we pursue. We facilitate by providing many online necessary supports for self-paced testing, integration etc, and for serious OpenStack deploys, you will go only when you feel confident.  An agile  team if not fully standby beforehands, will provide services when the need comes in.
 
-There are also some free editions provided, and free license for non-profit organizations. Just write to us for more details or a quote!
+There are also some free editions provided, and free license for non-profit organizations. And we trust a partner oriented collaboration with transparency to drive the success to have a win-win on both sides. Any way just write to us for more details or a quote!
 
 # Get Help
 
