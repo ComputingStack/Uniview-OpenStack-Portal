@@ -21,7 +21,7 @@ With above general understanding, the second question might be on business model
 
 Uniview has been incubated over many different requirements, developed in agile mode, and  polished to be perfect with partnerships. Hence it is expected to brings down the cost of your total E2E solution.  
 
-You may also find Uniview is not a market promotion agreesive business. Yes, Uniview is more developers and fun driven. Infrastructure, esp Cloud has never been a quick process. Sustainability is the first priority that we pursue. We faciliate by providing many online necessary self-paced testing, integration etc, and for serious OpenStack deploys, you will go only when you feel confident.  An agile  team if not fully standby beforehands, will provide services when the need comes in.
+You may also find Uniview is not a market promotion agreesive business. Yes, Uniview is more developers and fun driven. Infrastructure, esp Cloud has never been a quick process. Sustainability is the first priority that we pursue. We facilitate by providing many online necessary supports for self-paced testing, integration etc, and for serious OpenStack deploys, you will go only when you feel confident.  An agile  team if not fully standby beforehands, will provide services when the need comes in.
 
 There are also some free editions provided, and free license for non-profit organizations. Just write to us for more details!
 
