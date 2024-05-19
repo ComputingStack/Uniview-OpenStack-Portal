@@ -13,7 +13,7 @@ Generally Uniview has been considered as a READY2GO for OpenStack monetization, 
 
 Any questions and suggestions are appreciated!
 
-The reposition and git hub serve as well a ticketing system for logging new issue, tracking hisotrical issue, communication between Computingstack team and clients.
+The curent repositary serves as well a ticketing system for logging new issue, tracking hisotrical issue, communication between Computingstack team and clients.
 
 # Pricing and Uniview Business Model
 
