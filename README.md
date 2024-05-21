@@ -1,4 +1,4 @@
-# Uniview OpenStack Billing and Controal Panel Dashboard Solutions
+# Uniview - Comprehensive OpenStack Billing, Controal Panel and Dashboard Solutions
 The current repo is a place for artifacts and install manual, discussion and issues surrounding deployment of ComputingStack Uniview Openstack Portal. It includes the artifacts needed for install and daily operations, such as kubernetes deploy helm charts, docker-compose, configuration and Database releated scripts, process, customizations etc, in order to stand up a proper cloud portal integration.
 
 Uniview is a total solution of OpenStack billing plus comprehensive control panel and dashboards for both public clouds and premius private clouds over OpenStack. 
