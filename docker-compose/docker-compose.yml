@@ -23,7 +23,7 @@ services:
       os_interface_type: admin
       os_auth_user: intos
       os_auth_pass: intos
-      os_auth_project: intos
+      os_auth_project: uniview
       uniview_key: xxxxx
       ceph_api_url: http://1.2.3.4:8090
       ceph_api_user: computingstack
