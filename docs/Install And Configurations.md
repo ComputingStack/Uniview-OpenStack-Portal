@@ -93,7 +93,7 @@ edit uniview_ubuntu.yml with necessary above database and openstack access info 
 $ ansible-playbook -i ./ uniview_ubuntu.yml --connection=local
 ```
 if ansible run from different  host, as as your Kolla ansible console server: 
-$ ansible-playbook -i ./ uniview_ubuntu.yml 
+```$ ansible-playbook -i ./ uniview_ubuntu.yml ```
 
 6. Access your service at: http://host_ip:3006/
 
