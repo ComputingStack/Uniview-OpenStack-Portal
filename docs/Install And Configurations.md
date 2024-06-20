@@ -88,10 +88,10 @@ cd ~/Uniview-OpenStack-Portal/Ansible
 
 edit uniview_ubuntu.yml with necessary above database and openstack access info at step 2 and 3
 
-5. bring service up
-
+5. Bring service up
+```
 $ ansible-playbook -i ./ uniview_ubuntu.yml --connection=local
-
+```
 if ansible run from different  host, as as your Kolla ansible console server: 
 $ ansible-playbook -i ./ uniview_ubuntu.yml 
 
