@@ -1,0 +1,46 @@
+- hosts: collector
+  #become: true
+  serial: 1
+  vars:
+    collector_image: xxxxx.dkr.ecr.ca-central-1.amazonaws.com/computingstack-oif-collector:2024-august
+    db_host: 13.23.21.153
+    db_user: uniview
+    db_password: password
+    db_database: uniview
+    keystone_auth_url: "https://13.23.17.14:5000"
+    os_interface_type: public
+    os_auth_user: my_username
+    os_auth_pass: my_password
+    os_auth_project: my_project
+    concurrent_sessions: "3"
+    log_level: debug
+    rabbitmq_conn_url: "amqp://openstack:my_credential@192.168.1.3:5672,amqp://openstack:my_credential@192.168.1.4:5672,amqp://openstack:my_credential@192.168.1.2:5672"
+    region: "RegionOne"
+  tasks:
+    - name: print out info
+      debug: msg={{ groups['collector'][0]  }}
+
+
+    - name: deploy uniview docker container
+      docker_container:
+        image: "{{ collector_image }}"
+        name: uniview-collector
+        state: started
+        auto_remove: false
+        restart: yes
+        restart_policy: always
+        network_mode: host
+        env:
+          db_host: "{{ db_host }}"
+          db_user: "{{ db_user }}"
+          db_password: "{{ db_password }}"
+          db_database: "{{ db_database }}"
+          keystone_auth_url: "{{ keystone_auth_url  }}"
+          os_interface_type: "{{ os_interface_type }}"
+          os_auth_user: "{{ os_auth_user }}"
+          os_auth_pass: "{{ os_auth_pass }}"
+          os_auth_project: "{{ os_auth_project }}"
+          concurrent_sessions: "{{ concurrent_sessions }}"
+          log_level: "{{ log_level }}"
+          rabbitmq_conn_url: "{{ rabbitmq_conn_url }}"
+          region: "{{ region}}"
