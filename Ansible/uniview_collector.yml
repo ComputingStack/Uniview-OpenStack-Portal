@@ -11,6 +11,7 @@
     log_level: debug
     rabbitmq_conn_url: "amqp://openstack:my_credential@192.168.1.3:5672,amqp://openstack:my_credential@192.168.1.4:5672,amqp://openstack:my_credential@192.168.1.2:5672"
     region: "RegionOne"
+    context: "dev"
   tasks:
     - name: print out info
       debug: msg={{ groups['collector'][0]  }}
@@ -34,3 +35,4 @@
           log_level: "{{ log_level }}"
           rabbitmq_conn_url: "{{ rabbitmq_conn_url }}"
           region: "{{ region}}"
+          context: "{{ context }}"
