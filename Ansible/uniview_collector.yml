@@ -2,7 +2,7 @@
   #become: true
   serial: 1
   vars:
-    collector_image: xxxxx.dkr.ecr.ca-central-1.amazonaws.com/computingstack-oif-collector:2024-august
+    collector_image: xxxxx.dkr.ecr.ca-central-1.amazonaws.com/computingstack-oif-collector:2024-november
     db_host: 13.23.21.153
     db_user: uniview
     db_password: password
@@ -12,6 +12,7 @@
     rabbitmq_conn_url: "amqp://openstack:my_credential@192.168.1.3:5672,amqp://openstack:my_credential@192.168.1.4:5672,amqp://openstack:my_credential@192.168.1.2:5672"
     region: "RegionOne"
     context: "dev"
+    listen_port: "3007"
   tasks:
     - name: print out info
       debug: msg={{ groups['collector'][0]  }}
@@ -25,6 +26,8 @@
         auto_remove: false
         restart: yes
         restart_policy: always
+        ports:
+          - "3007:{{ listen_port }}"
         network_mode: host
         env:
           db_host: "{{ db_host }}"
@@ -36,3 +39,9 @@
           rabbitmq_conn_url: "{{ rabbitmq_conn_url }}"
           region: "{{ region}}"
           context: "{{ context }}"
+        healthcheck:
+          test: echo hello || exit 1
+          interval: 90s
+          retries: 5
+          start_period: 20s
+          timeout: 10s
