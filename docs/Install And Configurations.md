@@ -46,10 +46,9 @@ edit conf/univew.json with necessary above database and openstack access info at
 5. Bring Uniview Core service up
 ```
 docker-compose up
-```
 
-or with latest docker compose binary
-```
+# or with latest docker compose binary
+
 docker compose up
 ```
 
