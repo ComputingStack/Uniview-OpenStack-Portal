@@ -30,7 +30,7 @@ There are also some free editions provided, and free license for non-profit orga
 1. Leave question, or comments on the current github pages! Our community manager will hop on and respond shortly!
 2. Visit https://www.computingstack.com, or contact admin@computingstack.com!
 
-# Get Started with docker-compose with just a couple easy steps
+# Get Installed with docker-compose with just a couple easy steps
 Docker-compose is generic and the best get-started step for Uniview install. Once single docker host install is successful, various other deployments will be just a short adjustment to that particular hosting requirements over local docker install process. Below process are applicable to both Uniview free edition (or called based edition) and enterprise 
 edition
 
@@ -49,6 +49,30 @@ Step 2: Edit the credentials needed in the docker-compose file as environment va
 Step 3: Service is up: "docker-compose up"
 
 Further details, please refer to: https://github.com/ComputingStack/Uniview-OpenStack-Portal/tree/main/docs
+
+# Get Installed with Ansible with just a couple easy steps
+Ansible based install with Uniview Core and Collector are recommanded way when automation is needed for frequent install/uninstall one or more Uniview instances.  
+
+Prerequistes:
+
+1: OpenStack backend is up. The minimal requirement is to have Keystone running.
+
+2: Prepare your ansible console host with ansible binary installed
+
+2: Prepare docker host with necessary docker preinstalled
+
+3: Prepare mysql or maria database engine or reuse any of those pre-created, such as install by "sudo apt install mysql-server" on a Ubuntu host
+
+Step 1: Create database and user, grant the user to access the database from docker hosts
+
+Step 2: Edit the credentials needed in the docker-compose file as environment variables 
+
+Step 3: Service Core is up: "ansible -i ventory uniview_uniview.yml"
+
+Step 3: Service Collector is up: "ansible -i ventory uniview_uniview_collector.yml"
+
+Further details, please refer to: https://github.com/ComputingStack/Uniview-OpenStack-Portal/tree/main/docs
+
 
 # Get Started with Kubernetes helm charts
 Below process are applicable to both Uniview free edition (or called based edition) and enterprise 
