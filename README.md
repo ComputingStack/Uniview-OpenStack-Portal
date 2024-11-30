@@ -38,7 +38,7 @@ Prerequistes:
 
 1: OpenStack backend is up. The minimal requirement is to have Keystone running.
 
-2: Prepare docker host with necessary docker and docker-compose (Standalone is ok) preinstalled
+2: Prepare docker host with necessary docker-ce and docker-compose (Standalone is ok) preinstalled
 
 3: Prepare mysql or maria database engine or reuse any of those pre-created, such as install by "sudo apt install mysql-server" on a Ubuntu host
 
@@ -61,7 +61,7 @@ Prerequistes:
 
 2: Prepare your ansible console host with ansible binary and ansible docker plugin installed
 
-2: Prepare docker host with necessary docker preinstalled
+2: Prepare docker host with necessary docker-ce preinstalled
 
 3: Prepare mysql or maria database engine or reuse any of those pre-created, such as install by "sudo apt install mysql-server" on a Ubuntu host
 
