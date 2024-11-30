@@ -47,7 +47,7 @@ edit conf/univew.json with necessary above database and openstack access info at
 ```
 docker-compose up
 
-# or with latest docker compose binary
+$#or with latest docker compose binary
 
 docker compose up
 ```
@@ -56,13 +56,12 @@ docker compose up
 6. Access your service at: http://host_ip:3006/
 When webhook based monitoring from external load balancer, or by such as Nagio, the URI of health check is: Monitor your collector status at http://host_ip:3006/getVersion
 
-7. Bring Uniview collector up:
-   ```
+7. Bring Uniview collector up
+```
 docker-compose -f docker-compose-collector.yml up
-```
 
-or with latest docker compose binary
-```
+$# or with latest docker compose binary
+
 docker compose -f docker-compose-collector.yml up
 ```
 
