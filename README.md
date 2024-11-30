@@ -53,7 +53,7 @@ Step 3: Service is up: "docker-compose up"
 Further details, please refer to: https://github.com/ComputingStack/Uniview-OpenStack-Portal/tree/main/docs
 
 # Automated Install with Ansible with just a couple easy steps
-Ansible based install with Uniview Core and Collector are recommanded way when automation is needed for frequent install/uninstall one or more Uniview instances.  
+Ansible based install with Uniview Core and Collector is a recommended way when automation is needed for frequent install/uninstall one or more Uniview instances.  
 
 Prerequistes:
 
