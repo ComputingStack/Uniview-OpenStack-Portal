@@ -1,5 +1,7 @@
 # Univew Install with docker and docker compose
 
+Uniview Core and Collector can be installed by docker-compose. When first time booting those, before the Collector is booted Uniview Core must be up and ready, afterward to boot collector. As long as database is prepared (by Core), all late booting has no order constraint. 
+
 1. Install Docker docker and docker-compose on your targeted docker host. An example is to follow: https://docs.docker.com/engine/install/
  
 
@@ -41,12 +43,31 @@ cd ~/Uniview-OpenStack-Portal/docker-compose
 
 edit conf/univew.json with necessary above database and openstack access info at step 2 and 3
 
-5. bring service up
+5. Bring Uniview Core service up
 ```
 docker-compose up
 ```
-6. Access your service at: http://host_ip:3006/
 
+or with latest docker compose binary
+```
+docker compose up
+```
+
+
+6. Access your service at: http://host_ip:3006/
+When webhook based monitoring from external load balancer, or by such as Nagio, the URI of health check is: Monitor your collector status at http://host_ip:3006/getVersion
+
+7. Bring Uniview collector up:
+   ```
+docker-compose -f docker-compose-collector.yml up
+```
+
+or with latest docker compose binary
+```
+docker compose -f docker-compose-collector.yml up
+```
+
+8. Monitor your collector status at http://host_ip:3007/getVersion
 
 # Uniview Install with Ansible
 
@@ -88,7 +109,7 @@ cd ~/Uniview-OpenStack-Portal/Ansible
 
 edit uniview_ubuntu.yml with necessary above database and openstack access info at step 2 and 3
 
-5. Bring service up
+5. Bring Uniview Core service up
 ```
 $ ansible-playbook -i ./ uniview_ubuntu.yml --connection=local
 ```
@@ -99,7 +120,18 @@ If ansible runs from different  host, as as your Kolla ansible console server:
 6. Access your service at: http://host_ip:3006/
 
 
-# When High Avaialble Install Behind a Load Balancer
+7. Bring Uniview collector service up
+```
+$ ansible-playbook -i ./ uniview_ubuntu_collector.yml --connection=local
+```
+If ansible runs from different  host, as as your Kolla ansible console server: 
+
+```$ ansible-playbook -i ./ uniview_ubuntu_collector.yml ```
+
+8. Monitor your collector service health at: http://host_ip:3007/getVersion
+
+
+# When High Avaialble Install Behind a Load Balancer for Uniview Core
 
 In a critical install, it's recommanded to install 2+ docker instances or kubernetes Pods when deployed over Kubernetes cludster. In this case, an health check URI is provided to return 200 OK to serve the purpose to enable the health check function at your load balancer.  Below is an backend configuratino example when the LB is Haproxy by the nature, and you may tailur to your specific env however. 
 
