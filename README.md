@@ -42,6 +42,8 @@ Prerequistes:
 
 3: Prepare mysql or maria database engine or reuse any of those pre-created, such as install by "sudo apt install mysql-server" on a Ubuntu host
 
+Steps:
+
 Step 1: Create database and user, grant the user to access the database from docker hosts
 
 Step 2: Edit the credentials needed in the docker-compose file as environment variables 
@@ -63,13 +65,15 @@ Prerequistes:
 
 3: Prepare mysql or maria database engine or reuse any of those pre-created, such as install by "sudo apt install mysql-server" on a Ubuntu host
 
+Steps:
+
 Step 1: Create database and user, grant the user to access the database from docker hosts
 
-Step 2: Edit the credentials needed in the docker-compose file as environment variables 
+Step 2: Edit the credentials needed in ansible-playbooks variables 
 
 Step 3: Service Core is up: "ansible -i ventory uniview_uniview.yml"
 
-Step 3: Service Collector is up: "ansible -i ventory uniview_uniview_collector.yml"
+Step 4: Service Collector is up: "ansible -i ventory uniview_uniview_collector.yml"
 
 Further details, please refer to: https://github.com/ComputingStack/Uniview-OpenStack-Portal/tree/main/docs
 
