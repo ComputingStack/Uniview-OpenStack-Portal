@@ -28,7 +28,7 @@ services:
       ceph_api_url: http://1.2.3.4:8090
       ceph_api_user: computingstack
       ceph_api_pass: your_pass
-      concurrent_sessions: 6
+      concurrent_sessions: 4
       log_level: info
       prometheus_url: http://1.2.3.4:9090
     deploy:
