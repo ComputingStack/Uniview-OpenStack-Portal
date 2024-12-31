@@ -1,7 +1,7 @@
 version: '3'
 services:
   collector:    
-    image: computingstack/computingstack-oif-collector:2024-november    
+    image: computingstack/computingstack-oif-collector:2025-january    
     ports:
     - "3007:3007"
     healthcheck:
@@ -19,7 +19,10 @@ services:
       db_user: uniview
       db_password: your_password
       db_database: uniview
-      rabbitmq_conn_url: amqp://intos:intos1@192.168.1.1:5672,amqp://intos:intos1@192.168.1.2:5672,amqp://intos:intos1@192.168.1.3:5672
+      #rabbitmq_conn_url: amqp://intos:intos1@192.168.1.1:5672,amqp://intos:intos1@192.168.1.2:5672,amqp://intos:intos1@192.168.1.3:5672
+      transport_url_nova: "rabbit://user:pass@192.168.1.17:5672"
+      transport_url_neutron: "rabbit://user:pass@192.168.1.17:5672"
+      transport_url_cinder: "rabbit://user:pass@192.168.1.17:5672"
       concurrent_sessions: 3
       region: RegionOne
       context: uniview
