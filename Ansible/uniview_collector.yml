@@ -2,7 +2,7 @@
   #become: true
   serial: 1
   vars:
-    collector_image: xxxxx.dkr.ecr.ca-central-1.amazonaws.com/computingstack-oif-collector:2024-november
+    collector_image: xxxxx.dkr.ecr.ca-central-1.amazonaws.com/computingstack-oif-collector:2025-january
     db_host: 13.23.21.153
     db_user: uniview
     db_password: password
