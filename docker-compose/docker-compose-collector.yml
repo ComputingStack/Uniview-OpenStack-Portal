@@ -1,7 +1,7 @@
 version: '3'
 services:
   collector:    
-    image: computingstack/computingstack-oif-collector:2025-january    
+    image: computingstack/computingstack-collector:2025-january    
     ports:
     - "3007:3007"
     healthcheck:
