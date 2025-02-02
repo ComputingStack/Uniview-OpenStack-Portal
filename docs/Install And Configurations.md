@@ -43,6 +43,8 @@ cd ~/Uniview-OpenStack-Portal/docker-compose
 
 edit conf/univew.json with necessary above database and openstack access info at step 2 and 3
 
+For enterprise starter edition, give any random string to var of uniview_key.
+
 5. Bring Uniview Core service up
 ```
 docker-compose up
