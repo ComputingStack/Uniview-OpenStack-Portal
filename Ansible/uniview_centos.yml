@@ -7,7 +7,7 @@
     db_user: uniview
     db_password: your_password
     db_database: uniview
-    keystone_auth_url: "https://2.2.4.3:5000"
+    keystone_auth_url: "https://2.2.4.3:5000/v3"
     os_interface_type: public
     os_auth_user: intos
     os_auth_pass: intos
