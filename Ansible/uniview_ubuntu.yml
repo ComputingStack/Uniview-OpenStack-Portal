@@ -24,16 +24,16 @@
     - name: print out info
       debug: msg={{ groups['uniview'][0]  }}
       
-    - name: apt install pip3
-      become: yes
-      apt:
-        name: python3-pip
-        state: present
+    #- name: apt install pip3
+    #  become: yes
+    #  apt:
+    #    name: python3-pip
+    #    state: present
 
-    - name: pip install
-      pip:
-        executable: pip3
-        name: docker
+    #- name: pip install
+    #  pip:
+    #    executable: pip3
+    #    name: docker
 
     - name: deploy uniview docker container
       docker_container:
