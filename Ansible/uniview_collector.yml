@@ -1,4 +1,4 @@
-- hosts: collector
+- hosts: localhost
   #become: true
   serial: 1
   vars:
@@ -17,8 +17,8 @@
     context: "dev"
     #listen_port: "3007"
   tasks:
-    - name: print out info
-      debug: msg={{ groups['collector'][0]  }}
+    #- name: print out info
+    #  debug: msg={{ groups['collector'][0]  }}
 
 
     - name: deploy uniview docker container
