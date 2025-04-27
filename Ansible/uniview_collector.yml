@@ -15,7 +15,7 @@
     transport_url_cinder: "rabbit://user:pass@192.168.1.17:5672"
     region: "RegionOne"
     context: "dev"
-    listen_port: "3007"
+    #listen_port: "3007"
   tasks:
     - name: print out info
       debug: msg={{ groups['collector'][0]  }}
