@@ -15,7 +15,7 @@
     transport_url_cinder: "rabbit://user:pass@192.168.1.17:5672"
     region: "RegionOne"
     context: "dev"
-    #listen_port: "3007"
+    listen_port: "3007"
   tasks:
     #- name: print out info
     #  debug: msg={{ groups['collector'][0]  }}
@@ -31,7 +31,7 @@
         restart_policy: always
         ports:
           - "3007:{{ listen_port }}"
-        network_mode: host
+        #network_mode: host
         env:
           db_host: "{{ db_host }}"
           db_user: "{{ db_user }}"
