@@ -108,10 +108,10 @@ In above credentials:
 
 4. Prepare your install environment by cloing current repo:
 
+```
 git clone https://github.com/ComputingStack/Uniview-OpenStack-Portal.git
-
 cd ~/Uniview-OpenStack-Portal/Ansible
-
+```
 edit uniview_ubuntu.yml with necessary above database and openstack access info at step 2 and 3
 
 For enterprise starter edition, give any random string to var of uniview_key.
