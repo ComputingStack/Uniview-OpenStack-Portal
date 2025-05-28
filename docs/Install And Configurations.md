@@ -84,9 +84,9 @@ When Uniview is co-located with Kolla ansible hosting servers, those prerequisit
 2. Prepare MySql database or Maria Db
 
 To do so, an example is to install on an Ubuntu server with command: sudo apt install mysql-server. Once MySql is up, create databse:
-
+```
 CREATE DATABASE uniview; CREATE USER 'uniview'@'%' IDENTIFIED BY 'password'; GRANT ALL PRIVILEGES ON uniview.* TO 'uniview'@'%'; exit
-
+```
 Test out if mysql can be acessible, execute command from docker host:
 mysql -h host -u uniview -ppassword
 
