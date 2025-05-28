@@ -140,7 +140,7 @@ If ansible runs from different  host, as as your Kolla ansible console server:
 
 # When High Avaialble Install Behind a Load Balancer for Uniview Core
 
-In a critical install, it's recommanded to install 2+ docker instances or kubernetes Pods when deployed over Kubernetes cludster. In this case, an health check URI is provided to return 200 OK to serve the purpose to enable the health check function at your load balancer.  Below is an backend configuratino example when the LB is Haproxy by the nature, and you may tailur to your specific env however. 
+In a critical install, it's recommanded to install 2+ docker instances or kubernetes Pods when deployed over Kubernetes cludster. In this case, an health check URI is provided to return 200 OK to serve the purpose to enable the health check function at your load balancer.  Below is an backend configuratino example when the LB is Haproxy by the nature, and you may tailor to your specific env however. 
 
 ```
 backend backend-uniview
@@ -148,3 +148,6 @@ backend backend-uniview
     server uniview1 ip1:3006 check inter 180s
     server uniview2 ip2:3006 check inter 180s
 ```
+# TLS and HTTPS support
+
+Uniview is docker service and has no in place TLS support. To support HTTPS, a load balancer such as the one mentioned above for HA is required to terminate TLS. Uniview is very optmized as no session dependency, so that any a load balancer with no comlex configuration will be able to do the job. A round robin algarithm is recommended.
