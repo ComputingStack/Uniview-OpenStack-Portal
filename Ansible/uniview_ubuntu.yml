@@ -16,7 +16,8 @@
     ceph_api_url: http://1.2.3.4:8090
     ceph_api_user: computingstack
     ceph_api_pass: your_pass
-    listen_port: "3006"
+    listen_port: "3011"
+    daemon_listen_port: "3011"
     concurrent_sessions: "4"
     log_level: info
     prometheus_url: http://1.2.3.4:9090
@@ -45,7 +46,7 @@
         restart_policy: always
 
         ports:
-          - "3006:{{ listen_port }}"
+          - "{{ daemon_listen_port  }}:{{ listen_port }}"
         env:
           db_host: "{{ db_host }}"
           db_user: "{{ db_user }}"
@@ -63,8 +64,9 @@
           concurrent_sessions: "{{ concurrent_sessions }}"
           log_level: "{{ log_level }}"
           prometheus_url: "{{  prometheus_url }}"
+          daemon_listen_port: "{{ daemon_listen_port }}"
         healthcheck:
-          test: curl --fail http://localhost:3006/getVersion || exit 1
+          test: "curl --fail http://localhost:{{ daemon_listen_port }}/getVersion || exit 1"
           interval: 90s
           retries: 5
           start_period: 20s
