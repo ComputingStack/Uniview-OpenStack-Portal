@@ -15,6 +15,7 @@
     transport_url_cinder: "rabbit://user:pass@192.168.1.17:5672"
     region: "RegionOne"
     context: "dev"
+    install_name: "prime"
     listen_port: "3007"
   tasks:
     #- name: print out info
@@ -43,6 +44,7 @@
           transport_url_neutron: "{{ transport_url_neutron }}"
           transport_url_cinder: "{{ transport_url_cinder }}"
           region: "{{ region}}"
+          install_name: "{{ install_name }}"
           context: "{{ context }}"
         healthcheck:
           test: echo hello || exit 1
