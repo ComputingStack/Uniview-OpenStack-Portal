@@ -1,0 +1,66 @@
+- hosts: uniview
+  #become: true
+  serial: 1
+  vars:
+    uniview_image: computingstack/uniview-openstack-frontends:latest    
+    db_host: 10.10.10.2
+    db_user: uniview-scheduler
+    db_password: your_password
+    db_database: uniview
+    keystone_auth_url: "https://2.2.4.3:5000/v3"
+    os_interface_type: public
+    os_auth_user: intos
+    os_auth_pass: intos
+    os_auth_project: service
+    uniview_key: xxxxxx    
+    listen_port: "3012"
+    daemon_listen_port: "3012"
+    concurrent_sessions: "0"
+    log_level: info
+    
+  tasks:
+    - name: print out info
+      debug: msg={{ groups['uniview'][0]  }}
+      
+    #- name: apt install pip3
+    #  become: yes
+    #  apt:
+    #    name: python3-pip
+    #    state: present
+
+    #- name: pip install
+    #  pip:
+    #    executable: pip3
+    #    name: docker
+
+    - name: deploy uniview docker container
+      docker_container:
+        image: "{{ uniview_scheduler_image }}"
+        name: uniview         
+        state: started
+        auto_remove: false
+        restart: yes
+        restart_policy: always
+
+        ports:
+          - "{{ daemon_listen_port  }}:{{ listen_port }}"
+        env:
+          db_host: "{{ db_host }}"
+          db_user: "{{ db_user }}"
+          db_password: "{{ db_password }}"
+          db_database: "{{ db_database }}"
+          keystone_auth_url: "{{ keystone_auth_url  }}"
+          os_interface_type: "{{ os_interface_type }}"
+          os_auth_user: "{{ os_auth_user }}"
+          os_auth_pass: "{{ os_auth_pass }}"
+          os_auth_project: "{{ os_auth_project }}"
+          uniview_key: "{{ uniview_key }}"          
+          concurrent_sessions: "{{ concurrent_sessions }}"
+          log_level: "{{ log_level }}"          
+          daemon_listen_port: "{{ daemon_listen_port }}"
+        healthcheck:
+          test: "curl --fail http://localhost:{{ daemon_listen_port }}/getVersion || exit 1"
+          interval: 90s
+          retries: 5
+          start_period: 20s
+          timeout: 10s
