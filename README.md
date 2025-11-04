@@ -6,6 +6,7 @@ Uniview is a comprehensive solution that offers OpenStack billing capabilities a
 Key Features and Mission
 
 1. Native OpenStack Billing Solution
+   
 Uniview is missioned to provide a native billing solution that integrates seamlessly with the upstream OpenStack components: Ceilometer, Gnocchi, and Cloudkitty. Adopting community-driven metering solutions significantly impacts the total cost of offering cloud services.
 Uniview enhances this foundation with:
 Out-of-the-box readiness for bill generation and aggregation.
@@ -14,9 +15,11 @@ Integrated payment gateway and invoice management.
 Leveraging standard community components ensures the solution remains current, comprehensive, and sustainable. This approach avoids vendor lock-in and supports a wide range of services beyond standard VMs, including Swift object storage, Ceph RGW, and database-as-a-service offerings.
 
 3. Premium Alternative Dashboard
+
 Uniview provides a modern alternative to OpenStack Horizon and Skyline, focusing heavily on user experience (UX). Our goal is to offer visually enriched interfaces and a "one-click away" experience that meets the sophisticated infrastructure management needs of modern enterprises.
 
 5. Enhanced Day 2 Operations
+
 Uniview emphasizes features for "Day 2" activities (ongoing operations), such as comprehensive monitoring, an integrated ticketing system, extensive dashboards, enriched metric visualizations, and enhanced Ceph and Kubernetes management interfaces. These premium features exceed standard open-source offerings.
 
 
