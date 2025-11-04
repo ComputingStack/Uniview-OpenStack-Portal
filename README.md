@@ -18,7 +18,7 @@ Leveraging standard community components ensures the solution remains current, c
 
 Uniview provides a modern alternative to OpenStack Horizon and Skyline, focusing heavily on user experience (UX). Our goal is to offer visually enriched interfaces and a "one-click away" experience that meets the sophisticated infrastructure management needs of modern enterprises.
 
-3. Making up key functionalities that are critical to success cloud adoption
+3. Making up key functionalities that are critical to success of cloud adoption
 
 Features such as data backup are schedules of events are critical for CLOUD automation. Without such cozy features, cloud quality is compromised when high end workload isn't find its fit. ComputingStack uniview helps to make those features accessible by simply a click without no extra 3rd part integrations, so that it could save time and also cost of engineering on those, just through out of box support. 
 
