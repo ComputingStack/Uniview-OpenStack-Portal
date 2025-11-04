@@ -14,11 +14,17 @@ Support for both pre-pay and post-pay models.
 Integrated payment gateway and invoice management.
 Leveraging standard community components ensures the solution remains current, comprehensive, and sustainable. This approach avoids vendor lock-in and supports a wide range of services beyond standard VMs, including Swift object storage, Ceph RGW, and database-as-a-service offerings.
 
-3. Premium Alternative Dashboard
+2. Premium Alternative Dashboard
 
 Uniview provides a modern alternative to OpenStack Horizon and Skyline, focusing heavily on user experience (UX). Our goal is to offer visually enriched interfaces and a "one-click away" experience that meets the sophisticated infrastructure management needs of modern enterprises.
 
-5. Enhanced Day 2 Operations
+3. Making up key functionalities that are critical to success cloud adoption
+
+Features such as data backup are schedules of events are critical for CLOUD automation. Without such cozy features, cloud quality is compromised when high end workload isn't find its fit. ComputingStack uniview helps to make those features accessible by simply a click without no extra 3rd part integrations, so that it could save time and also cost of engineering on those, just through out of box support. 
+
+Another feature is its capability that orchestrates complex OpenStack cluster. Multiple OpenStack clucsters, when they either share keystone or share nothing, Uniview multiple clouds can orchestrate into a sense a one cloud for end users to consume. Shared nothing cluster is proven one of practical approaches to have reliable cloud. 
+
+4. Enhanced Day 2 Operations
 
 Uniview emphasizes features for "Day 2" activities (ongoing operations), such as comprehensive monitoring, an integrated ticketing system, extensive dashboards, enriched metric visualizations, and enhanced Ceph and Kubernetes management interfaces. These premium features exceed standard open-source offerings.
 
