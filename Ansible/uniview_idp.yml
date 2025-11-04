@@ -1,0 +1,37 @@
+- hosts: localhost
+  #become: true
+  serial: 1
+  vars:
+    idp_image: xxxx.dkr.ecr.ca-central-1.amazonaws.com/computingstack-oif-idp:2025-november
+    db_host: 10.10.10.101
+    db_user: db_user
+    db_password: your_pass
+    db_database: database_name
+    listen_port: 5000
+  tasks:
+    #- name: print out info
+    #  debug: msg={{ groups['collector'][0]  }}
+
+
+    - name: deploy uniview idp
+      docker_container:
+        image: "{{ idp_image }}"
+        name: uniview-idp
+        state: started
+          #auto_remove: false
+        restart: yes
+        restart_policy: always
+        ports:
+          - "{{ listen_port  }}:{{ listen_port  }}"
+        #network_mode: host
+        env:
+          db_host: "{{ db_host }}"
+          db_user: "{{ db_user }}"
+          db_password: "{{ db_password }}"
+          db_database: "{{ db_database }}"
+        healthcheck:
+          test: "curl --fail http://localhost:{{ listen_port }}/v3 || exit 1"
+          interval: 90s
+          retries: 5
+          start_period: 20s
+          timeout: 10s
