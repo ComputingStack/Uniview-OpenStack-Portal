@@ -1,17 +1,31 @@
 # Uniview - Comprehensive OpenStack Billing, Control Panel and Dashboard Solutions
+This repository serves as a central location for artifacts and documentation related to the deployment of the ComputingStack Uniview OpenStack Portal. It contains all necessary components for installation and ongoing operations, including Kubernetes deployment Helm charts, docker-compose files, configuration scripts, database schemas, and process documentation required to establish a fully functional cloud portal integration. The repository also functions as a ticketing system for logging and tracking issues and facilitating communication between the ComputingStack team and clients.
+
+Uniview is a comprehensive solution that offers OpenStack billing capabilities along with robust control panels and dashboards designed for both public and private clouds running on OpenStack infrastructure.
+
+Key Features and Mission
+
+1. Native OpenStack Billing Solution
+Uniview is missioned to provide a native billing solution that integrates seamlessly with the upstream OpenStack components: Ceilometer, Gnocchi, and Cloudkitty. Adopting community-driven metering solutions significantly impacts the total cost of offering cloud services.
+Uniview enhances this foundation with:
+Out-of-the-box readiness for bill generation and aggregation.
+Support for both pre-pay and post-pay models.
+Integrated payment gateway and invoice management.
+Leveraging standard community components ensures the solution remains current, comprehensive, and sustainable. This approach avoids vendor lock-in and supports a wide range of services beyond standard VMs, including Swift object storage, Ceph RGW, and database-as-a-service offerings.
+
+3. Premium Alternative Dashboard
+Uniview provides a modern alternative to OpenStack Horizon and Skyline, focusing heavily on user experience (UX). Our goal is to offer visually enriched interfaces and a "one-click away" experience that meets the sophisticated infrastructure management needs of modern enterprises.
+
+5. Enhanced Day 2 Operations
+Uniview emphasizes features for "Day 2" activities (ongoing operations), such as comprehensive monitoring, an integrated ticketing system, extensive dashboards, enriched metric visualizations, and enhanced Ceph and Kubernetes management interfaces. These premium features exceed standard open-source offerings.
+
+
+Uniview is a ready-to-go solution for monetizing OpenStack environments, suitable for small-to-medium public clouds and large enterprise deployments. By utilizing Uniview, organizations can save significant in-house engineering costs.
+The solution has been rigorously developed over several years and is currently stable and low-maintenance. It is highly customizable for service providers looking to differentiate their offerings. Uniview works with all OpenStack installs and is an ideal fit for enterprise clouds requiring hierarchical organization support and high security standards. It also meets critical public cloud requirements such as billing, user management/registration, tenant isolation, and security needs.
+
 The current repo is a place for artifacts and install manual, discussion and issues surrounding deployment of ComputingStack Uniview Openstack Portal. It includes the artifacts needed for install and daily operations, such as kubernetes deploy helm charts, docker-compose, configuration and Database releated scripts, process, customizations etc, in order to stand up a proper cloud portal integration.
 
-Uniview is a total solution of OpenStack billing plus comprehensive control panel and dashboards for both public clouds and premius private clouds over OpenStack. 
 
-First of all, it's missioned to provide a native OpenStack Billing solution over upstream communication packages of Ceilometer+Gnocchi+Cloudkitty. What metering solution is adopted is top factor for OpenStack total cost of cloud service offering. Uniview complements by its out box readiness of bill generating/aggregating, pre-pay and post-pay support, Payment Gateway Integration, invoice management etc. Benefits to use common components for OpenStack Billing are significant, such as it's up to to date, comprehensive (as solution by communities), sustainable to the future. To compare some niche solutions, communities driven Ceilometer+Gnocchi+Cloudkitty is more future friendly and more complete that supports all possibilities, such as not only VM, but also swift object store, ceph RGW based object storage, other upstream services such as database as a service easily along the community artifacts. There will be no vendor-locked in. Given there are other proprietary solutions of metering (mostly based on RabbitMQ), such as by Fleio, Osie and Cloud7, Uniview strives to complement the ecosystem by an alternative solution when service providers have Ceilometer+Gnocchi in place beforehand, Uniview can be a best candidate that supports E2E billing in no time with no compromise of open-source benefits and its flexibility.
-
-Secondly Uniview is missioned to provide an alternative dashboard to OpenStack Horizon and Skyline for frontend premium solutions! One major drive of Uniview has been the User Experience, so that OpenStack cloud can match up itself by providing users visual enriched experiences, everything just one click away, comprehensive to meet a modern enterprise would need in terms of infrastructure and clouds stand for! 
-
-The last but not the least Uniview is also more focused on the needs of Day 2 activities, such as monitoring, ticketing system, tons of dashboards, enriched metrics graphic views, enhanced kubernetes dashboards, Ceph integrated dashboards etc. All is about to have a strong sense of premium that open-source is not expected to and wil never provide.
-
-Generally Uniview has been considered as a READY2GO for OpenStack monetization, whichever for small-medium public clouds or big organization premium clouds, so that user can save the in-house engineering. Uniview has been incubated for many years through industry collaboration and intensified developments. At the moment it's a low maintenance stage. However it can be further customized to help a service provider to build its differentiators to support a possible regional leading cloud initiatives.  From use cases point of view, Uniview works with all different OpenStack installs, and is known best fitting to the needs of enterprise clouds that have with relative hierachical organization, high security required! For those most of common requirements can be met out of box. It meets majority of the needs of many Public Clouds too, such as most desireable billing solutions, ticketing,  user recruitment/registration and tenant management, public cloud security needs etc. 
-
-Any questions and suggestions are appreciated!
 
 The curent repositary serves as well a ticketing system for logging new issue, tracking hisotrical issue, communication between Computingstack team and clients.
 
