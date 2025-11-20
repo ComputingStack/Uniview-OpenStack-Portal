@@ -8,6 +8,10 @@
     db_password: your_pass
     db_database: database_name
     listen_port: 5000
+    server_alias: 10.10.11.240:5000
+    exec_booting: "no"
+    ADMIN_PASSWORD: "pass"
+    
   tasks:
     #- name: print out info
     #  debug: msg={{ groups['collector'][0]  }}
@@ -28,7 +32,10 @@
           db_host: "{{ db_host }}"
           db_user: "{{ db_user }}"
           db_password: "{{ db_password }}"
-          db_database: "{{ db_database }}"
+          db_database: "{{ db_database }}"          
+          server_alias: "{{ server_alias  }}"
+          exec_booting: "{{ exec_booting  }}"
+          ADMIN_PASSWORD: "{{ ADMIN_PASSWORD }}"
         healthcheck:
           test: "curl --fail http://localhost:{{ listen_port }}/v3 || exit 1"
           interval: 90s
