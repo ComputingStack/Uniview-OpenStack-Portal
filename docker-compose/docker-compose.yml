@@ -25,6 +25,7 @@ services:
       os_auth_pass: intos
       os_auth_project: uniview
       uniview_key: xxxxx
+      daemon_listen_port: "3006"
       ceph_api_url: http://1.2.3.4:8090
       ceph_api_user: computingstack
       ceph_api_pass: your_pass
