@@ -7,8 +7,8 @@
     db_user: db_user
     db_password: your_pass
     db_database: database_name
-    listen_port: 5000
-    server_alias: 10.10.11.240:5000
+    server_alias: 10.10.10.10:5000
+    listen_port: "35357"
     exec_booting: "no"
     ADMIN_PASSWORD: "pass"
     
@@ -35,6 +35,7 @@
           db_database: "{{ db_database }}"          
           server_alias: "{{ server_alias  }}"
           exec_booting: "{{ exec_booting  }}"
+          listen_port: "{{ listen_port }}"
           ADMIN_PASSWORD: "{{ ADMIN_PASSWORD }}"
         healthcheck:
           test: "curl --fail http://localhost:{{ listen_port }}/v3 || exit 1"
