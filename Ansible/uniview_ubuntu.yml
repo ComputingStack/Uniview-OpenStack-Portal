@@ -44,7 +44,10 @@
         auto_remove: false
         restart: yes
         restart_policy: always
-
+        log_driver: json-file  # Required for log_options to take effect
+        log_options:
+          max-size: "50m"      # Maximum size of a single log file
+          max-file: "4"        
         ports:
           - "{{ daemon_listen_port  }}:{{ listen_port }}"
         env:
