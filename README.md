@@ -24,7 +24,7 @@ Features such as data backup are schedules of events are critical for CLOUD auto
 
 Another feature is its capability that orchestrates complex OpenStack cluster. Multiple OpenStack clucsters, when they either share keystone or share nothing, Uniview multiple clouds federation can orchestrate into a sense of ONE cloud for end users to consume. Shared nothing cluster is proven one of practical approaches to have reliable cloud and enable business agility. 
 
-4. Clusters Federation and Integration to One Brand, One Portal, One-Sign in, One Bill
+4. Clusters Federation and Integration to One Brand, One Portal, One-Sign in and One Bill
 
 Uniview recent innovation well improved its capability of integrating many various OpenStack clusters in plug and play mode, regardless of they share keystone or share nothing, the versions (e.g. one is newer, others are old), features, mutli-regions or single region. With Uniview-IDP, and Uniview-core together, a cluster can be added instantly to serve Enterprise user by as simple as adding a user to a group. When a cluster becomes obsolete, it can be safely removed without disrupting overall stability. The accomodation of dynamic can help Enterprise, esp. at early phase of OpenStack adoption. A note is that Uniview IDP is a Keystone essential with optimized configuration and modules integrated with out of box readiness, so that enterprise IT department has no need to invest time in such IAM engineering any more. Technically implemented:
 
