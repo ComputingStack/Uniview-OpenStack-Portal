@@ -14,7 +14,7 @@ Support for both pre-pay and post-pay models.
 Integrated payment gateway and invoice management.
 Leveraging standard community components ensures the solution remains current, comprehensive, and sustainable. This approach avoids vendor lock-in and supports a wide range of services beyond standard VMs, including Swift object storage, Ceph RGW, and database-as-a-service offerings.
 
-## 2. Premium Alternative Dashboard
+## 2. Premium Alternative User Console and Dashboards
 
 Uniview provides a modern alternative to OpenStack Horizon and Skyline, focusing heavily on user experience (UX). Our goal is to offer visually enriched interfaces and a "one-click away" experience that meets the sophisticated infrastructure management needs of modern enterprises. Uniview engineering has nearly redesigned and rewritten every services of OpenStack with orchetrated API interaction to meet the expectations of 'Modern, Sophisticate, Complete and Automated'.
 
