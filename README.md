@@ -20,9 +20,10 @@ Uniview provides a modern alternative to OpenStack Horizon and Skyline, focusing
 
 ## 3. Making up Key Functionalities over Open-Source Status Quo that are Critical to Success of Cloud Adoption
 
-Features such as data backup are schedules of events are critical for CLOUD automation. Without such cozy features, cloud quality is compromised when high end workload isn't find its fit. ComputingStack uniview helps to make those features accessible by simply a click without no extra 3rd part integrations, so that it could save time and also cost of engineering on those, just through out of box support. 
+Features such as data backup and schedules of events are critical for CLOUD automation. Without such cozy features, cloud quality is compromised when high end workload isn't find its fit. ComputingStack uniview helps to make those features accessible by simply a click without no extra 3rd part integrations, so that it could save time and also cost of engineering on those, just through out of box support. 
 
-Another feature is its capability that orchestrates complex OpenStack cluster. Multiple OpenStack clucsters, when they either share keystone or share nothing, Uniview multiple clouds federation can orchestrate into a sense of ONE cloud for end users to consume. Shared nothing cluster is proven one of practical approaches to have reliable cloud and enable business agility. 
+Other add-on such as Kubernetes Dashboard support added a seamless sense of integration of OpenStack and Kubernetes, the top 2 infrastructure technologies today.  Many features of such, to have a standalone solution can be expensive, whereas Uniview comes with pre-built as one platform. 
+
 
 ## 4. Clusters Federation and Integration to One Brand, One Portal, One-Sign in and One Bill
 
