@@ -43,7 +43,7 @@ Uniview recent innovation well improved its capability of integrating many vario
 **Security & Automation:** The platform simplifies critical security tasks such as enforcing Multi-Factor Authentication (MFA) and enabling self-service password resets, drastically reducing the burden on IT support teams. 
 
    
-##5. Enhanced Day 2 Operations
+## 5. Enhanced Day 2 Operations
 
 Uniview emphasizes features for "Day 2" activities (ongoing operations), such as comprehensive monitoring, an integrated ticketing system, extensive dashboards, enriched metric visualizations, and enhanced Ceph and Kubernetes management interfaces. These premium features exceed standard open-source offerings.
 
