@@ -16,7 +16,7 @@ Leveraging standard community components ensures the solution remains current, c
 
 ## 2. Premium Alternative Dashboard
 
-Uniview provides a modern alternative to OpenStack Horizon and Skyline, focusing heavily on user experience (UX). Our goal is to offer visually enriched interfaces and a "one-click away" experience that meets the sophisticated infrastructure management needs of modern enterprises.
+Uniview provides a modern alternative to OpenStack Horizon and Skyline, focusing heavily on user experience (UX). Our goal is to offer visually enriched interfaces and a "one-click away" experience that meets the sophisticated infrastructure management needs of modern enterprises. Uniview engineering has nearly redesigned and rewritten every services of OpenStack with orchetrated API interaction to meet the expectations of 'Modern, Sophisticate, Complete and Automated'.
 
 ## 3. Making up key functionalities that are critical to success of cloud adoption
 
