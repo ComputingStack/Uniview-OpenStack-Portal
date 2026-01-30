@@ -1,4 +1,4 @@
-# Uniview - Comprehensive OpenStack Billing, Control Panel and Dashboard Solutions
+# Uniview - Comprehensive OpenStack Billing, Control Panel and Dashboard, and Clusters Federation Solution
 This repository serves as a central location for artifacts and documentation related to the deployment of the ComputingStack Uniview OpenStack Portal. It contains all necessary components for installation and ongoing operations, including Kubernetes deployment Helm charts, docker-compose files, configuration scripts, database schemas, and process documentation required to establish a fully functional cloud portal integration. The repository also functions as a ticketing system for logging and tracking issues and facilitating communication between the ComputingStack team and clients.
 
 Uniview is a comprehensive solution that offers OpenStack billing capabilities along with robust control panels and dashboards designed for both public and private clouds running on OpenStack infrastructure.
@@ -24,7 +24,20 @@ Features such as data backup are schedules of events are critical for CLOUD auto
 
 Another feature is its capability that orchestrates complex OpenStack cluster. Multiple OpenStack clucsters, when they either share keystone or share nothing, Uniview multiple clouds federation can orchestrate into a sense of ONE cloud for end users to consume. Shared nothing cluster is proven one of practical approaches to have reliable cloud and enable business agility. 
 
-4. Enhanced Day 2 Operations
+4. Clusters Federation and Integration to One Brand, One Portal, One-Sign in, One Bill
+
+Uniview recent innovation well improved its capability of integrating many various OpenStack clusters in plug and play mode, regardless of they share keystone or share nothing, the versions (e.g. one is newer, others are old), features, mutli-regions or single region. With Uniview-IDP, and Uniview-core together, a cluster can be added instantly to serve Enterprise user by as simple as adding a user to a group. When a cluster becomes obsolete, it can be safely removed without disrupting overall stability. The accomodation of dynamic can help Enterprise, esp. at early phase of OpenStack adoption. A note is that Uniview IDP is a Keystone essential with optimized configuration and modules integrated with out of box readiness, so that enterprise IT department has no need to invest time in such IAM engineering any more.
+
+Abstraction: Uniview provides a single entry point that unifies multiple, coexisting OpenStack clusters under one "pane of glass".
+Hot-Swapping Infrastructure:Administrators can add or decommission clusters as needed without affecting the user base. To the end user, the cloud remains a single, continuous service regardless of the backend changes.
+Federated Identity: Uniview integrates easily with enterprise identity providers like OpenID, Microsoft Entra ID, and Active Directory.
+SSO Readiness: By using Single Sign-On (SSO), users sign in once to the CMP and gain access to authorized resources across any connected cluster.
+Self Password Recovering: by multiple steps of verification, users can recover password automatically without reaching out to administrators
+Hierarchical Management: It implements a true organization concept, allowing enterprise managers to handle their own Group Management and permissions via self-service. 
+Security & Automation: The platform simplifies critical security tasks such as enforcing Multi-Factor Authentication (MFA) and enabling self-service password resets, drastically reducing the burden on IT support teams. 
+
+   
+5. Enhanced Day 2 Operations
 
 Uniview emphasizes features for "Day 2" activities (ongoing operations), such as comprehensive monitoring, an integrated ticketing system, extensive dashboards, enriched metric visualizations, and enhanced Ceph and Kubernetes management interfaces. These premium features exceed standard open-source offerings.
 
