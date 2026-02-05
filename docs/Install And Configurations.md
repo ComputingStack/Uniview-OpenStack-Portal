@@ -45,9 +45,27 @@ git clone https://github.com/ComputingStack/Uniview-OpenStack-Portal.git
 
 cd ~/Uniview-OpenStack-Portal/docker-compose
 
-edit conf/univew.json with necessary above database and openstack access info at step 2 and 3
+Edit conf/univew.json with necessary above database and openstack access info at step 2 and 3
 
 For enterprise starter edition, give any random string to var of uniview_key.
+
+For dedicated build, the image will be distributed with AWS ECR. The steps to pull:
+```
+$ # IF first time setup, setup env and credential as below
+$ # when over centos/RHEL
+$ sudo yum install awscli
+$ # when over Ubuntu or other Debian OS 
+$ sudo apt install awscli
+# Provide access key and access key id at prompt
+$ aws configure
+
+$ # PULL Image with below
+$ aws ecr get-login-password --region ca-central-1 | docker login --username AWS --password-stdin xxxxx.dkr.ecr.ca-central-1.amazonaws.com
+# your credentials are stored in your home directory in .docker/config.json. The password is base64-encoded in this file.
+$ docker pull account_id.dkr.ecr.ca-central-1.amazonaws.com/computingstack-uniview-xxxx:2024-december
+$ docker pull account_id.dkr.ecr.ca-central-1.amazonaws.com/computingstack-oif-collector:2024-november
+```
+
 
 5. Bring Uniview Core service up
 ```
@@ -112,7 +130,7 @@ In above credentials:
 git clone https://github.com/ComputingStack/Uniview-OpenStack-Portal.git
 cd ~/Uniview-OpenStack-Portal/Ansible
 ```
-edit uniview_ubuntu.yml with necessary above database and openstack access info at step 2 and 3
+Edit uniview_ubuntu.yml with necessary above database and openstack access info at step 2 and 3
 
 For enterprise starter edition, give any random string to var of uniview_key.
 
