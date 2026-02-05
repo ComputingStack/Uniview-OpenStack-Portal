@@ -61,7 +61,6 @@ $ aws configure
 
 $ # PULL Image with below
 $ aws ecr get-login-password --region ca-central-1 | docker login --username AWS --password-stdin xxxxx.dkr.ecr.ca-central-1.amazonaws.com
-# your credentials are stored in your home directory in .docker/config.json. The password is base64-encoded in this file.
 $ docker pull account_id.dkr.ecr.ca-central-1.amazonaws.com/computingstack-uniview-xxxx:2024-december
 $ docker pull account_id.dkr.ecr.ca-central-1.amazonaws.com/computingstack-oif-collector:2024-november
 ```
@@ -146,7 +145,6 @@ $ aws configure
 
 $ # PULL Image with below
 $ aws ecr get-login-password --region ca-central-1 | docker login --username AWS --password-stdin xxxxx.dkr.ecr.ca-central-1.amazonaws.com
-# your credentials are stored in your home directory in .docker/config.json. The password is base64-encoded in this file.
 $ docker pull account_id.dkr.ecr.ca-central-1.amazonaws.com/computingstack-uniview-xxxx:2024-december
 $ docker pull account_id.dkr.ecr.ca-central-1.amazonaws.com/computingstack-oif-collector:2024-november
 ```
