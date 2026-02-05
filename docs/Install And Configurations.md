@@ -116,6 +116,23 @@ edit uniview_ubuntu.yml with necessary above database and openstack access info 
 
 For enterprise starter edition, give any random string to var of uniview_key.
 
+By chance, your docker image if enterprise or dedicated build,  can be pulled from AWS ECR. 
+```
+$ # IF first time setup, setup env and credential as below
+$ # when over centos/RHEL
+$ sudo yum install awscli
+$ # when over Ubuntu or other Debian OS 
+$ sudo apt install awscli
+# Provide access key and access key id at prompt
+$ aws configure
+
+$ # PULL Image with below
+$ aws ecr get-login-password --region ca-central-1 | docker login --username AWS --password-stdin xxxxx.dkr.ecr.ca-central-1.amazonaws.com
+# your credentials are stored in your home directory in .docker/config.json. The password is base64-encoded in this file.
+$ docker pull account_id.dkr.ecr.ca-central-1.amazonaws.com/computingstack-uniview-xxxx:2024-december
+$ docker pull account_id.dkr.ecr.ca-central-1.amazonaws.com/computingstack-oif-collector:2024-november
+```
+
 5. Bring Uniview Core service up
 ```
 $ ansible-playbook -i ./ uniview_ubuntu.yml --connection=local
