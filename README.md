@@ -68,6 +68,12 @@ You may also find Uniview is not a market promotion agreesive business. Yes, Uni
 
 There are also some free editions provided, and free license for non-profit organizations. And we trust a partner oriented collaboration with transparency to drive the success to have a win-win on both sides. Any way just write to us for more details or a quote!
 
+# Is Uniview Right For You?
+
+From our customer engagements, Uniview is ideal for those clouds in scale, or carrier grade, and when quality matters, instead of white-labelling from commercial side.  that a cloud visions to be leading in an area, and has constraints such as scability, branding, low efficiency  of customer interaction, and has complex integration needs. The scability can be vertical such as capacity growing from 2K cores to 10k, and it can be also horizontal that new services can't be easily added for example GPU, Kubernetes and cloud storage due to lack of means of operational of billing, or those service can't come to production readiness and completeness. Uniview is also ideal for business that have longer terms vision, that a partnership with Uniview will benefit the future evolution and stay competitive for years to come with Uniview investment on new features, without their ground work. 
+
+Due to relatively complexity, Uniview recently dropped committment to white-labelling. For small business and just get-started, in case partnership is important, Uniview is still a good choice.  
+
 # Get Help
 
 1. Leave question, or comments on the current github pages! Our community manager will hop on and respond shortly!
