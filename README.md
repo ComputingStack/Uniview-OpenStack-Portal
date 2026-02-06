@@ -5,7 +5,13 @@ Uniview is a comprehensive solution that offers OpenStack billing capabilities a
 
 Key Features and Mission
 
-## 1. Native OpenStack Billing Solution
+
+
+## 1. Premium User Console And Dashboards
+
+Uniview provides a modern alternative to OpenStack Horizon and Skyline, focusing heavily on user experience (UX). Our goal is to offer visually enriched interfaces and a "one-click away" experience that meets the sophisticated infrastructure management needs of modern enterprises. Uniview engineering has nearly redesigned and rewritten every services of OpenStack with orchetrated API interaction to meet the expectations of 'Modern, Sophisticate, Complete and Automated'.
+
+## 2. Native OpenStack Billing Solution
    
 Uniview is missioned to provide a native billing solution that integrates seamlessly with the upstream OpenStack components: Ceilometer, Gnocchi, and Cloudkitty. Adopting community-driven metering solutions significantly impacts the total cost of offering cloud services.
 Uniview enhances this foundation with:
@@ -14,15 +20,13 @@ Support for both pre-pay and post-pay models.
 Integrated payment gateway and invoice management.
 Leveraging standard community components ensures the solution remains current, comprehensive, and sustainable. This approach avoids vendor lock-in and supports a wide range of services beyond standard VMs, including Swift object storage, Ceph RGW, and database-as-a-service offerings.
 
-## 2. Premium Alternative User Console and Dashboards
-
-Uniview provides a modern alternative to OpenStack Horizon and Skyline, focusing heavily on user experience (UX). Our goal is to offer visually enriched interfaces and a "one-click away" experience that meets the sophisticated infrastructure management needs of modern enterprises. Uniview engineering has nearly redesigned and rewritten every services of OpenStack with orchetrated API interaction to meet the expectations of 'Modern, Sophisticate, Complete and Automated'.
-
-## 3. Making up Key Functionalities over Open-Source Status Quo that are Critical to Success of Cloud Adoption
+## 3. Key Functionalities that Make Up Open-Source Out-of-box And Are Often Very Critical to Success of OpenStack Adoption
 
 Features such as data backup and schedules of events are critical for CLOUD automation. Without such cozy features, cloud quality is compromised when high end workload isn't find its fit. ComputingStack uniview helps to make those features accessible by simply a click without no extra 3rd part integrations, so that it could save time and also cost of engineering on those, just through out of box support. 
 
-Other add-on such as Kubernetes Dashboard support added a seamless sense of integration of OpenStack and Kubernetes, the top 2 infrastructure technologies today.  Many features of such, to have a standalone solution can be expensive, whereas Uniview comes with pre-built as one platform. 
+Uniview metrics solutions are comprehensive and end2end that provide global entry for administrator and business level status, dashboard and system discovering, and also in place per object retrics for debuging, performance optimzing etc at developers day 2 day operation. Monitoring can help for those clouds when an entry for all aspects of an infrastucture. This can provide a good convinience esp. for hosted clouds, OpenStack as a service business etc.  
+
+Other add-on such as Kubernetes Dashboard support added a seamless sense of integration of OpenStack and Kubernetes dual API implementation, the top 2 infrastructure technologies today.  Many features of such, to have a standalone solution can be expensive, whereas Uniview comes with pre-built as one platform. 
 
 
 ## 4. Clusters Federation and Integration to One Brand, One Portal, One-Sign in and One Bill
