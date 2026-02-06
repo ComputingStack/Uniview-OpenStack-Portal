@@ -84,7 +84,7 @@ While we have moved beyond simple rebranding, we still provide the 'hit-the-grou
 # Get Help
 
 1. Leave question, or comments on the current github pages! Our community manager will hop on and respond shortly!
-2. Visit https://www.computingstack.com, or contact admin@computingstack.com!
+2. Visit https://www.computingstack.com, or contact through https://www.computingstack.com/conact
 
 # Get Installed with docker-compose with just a couple easy steps
 Docker-compose is generic and the best get-started step for Uniview install. Once single docker host install is successful, various other deployments will be just a short adjustment to that particular hosting requirements over local docker install process. Below process are applicable to both Uniview free edition (or called based edition) and enterprise 
