@@ -1,7 +1,7 @@
-# Uniview - Comprehensive OpenStack Billing, Control Panel and Dashboard, and Clusters Federation Solution
+# Uniview - Comprehensive OpenStack Billing, User Panel and Dashboard, Clustering and Workload Protection Solution
 This repository serves as a central location for artifacts and documentation related to the deployment of the ComputingStack Uniview OpenStack Portal. It contains all necessary components for installation and ongoing operations, including Kubernetes deployment Helm charts, docker-compose files, configuration scripts, database schemas, and process documentation required to establish a fully functional cloud portal integration. The repository also functions as a ticketing system for logging and tracking issues and facilitating communication between the ComputingStack team and clients.
 
-Uniview is a comprehensive solution that offers OpenStack billing capabilities along with robust control panels and dashboards designed for both public and private clouds running on OpenStack infrastructure.
+Uniview is a comprehensive solution that offers multiple key solutions for OpenStack infrastructure, such as modern and responsive user panel and dashboards, public cloud Billing, clustering that OpenStack Joins OpenStack, workload protection and disaster recovery. It is designed for both public and premium private clouds use cases.
 
 Key Features and Mission
 
@@ -29,7 +29,7 @@ To streamline daily operations, Uniview offers a comprehensive metrics and monit
 Uniview also provides a pre-built Kubernetes Dashboard, delivering a seamless experience for managing both OpenStack and Kubernetes—the industry’s leading infrastructure technologies—within a single, cost-effective platform. By consolidating these expensive standalone features into one interface, Uniview ensures a premium, integrated experience without the burden of multi-vendor overhead. 
 
 
-## 4. Clusters Federation and Integration to One Brand, One Portal, One-Sign in and One Bill
+## 4. Clustering of OpenStack into One Brand, One Portal, One-Sign in and One Bill
 
 Uniview recent innovation (Beginning of 2026) well improved its capability of integrating many various OpenStack clusters in plug and play mode, regardless of they share keystone or share nothing, the versions (e.g. one is newer, others are old), features, mutli-regions or single region. With Uniview-IDP, and Uniview-core together, a cluster can be added instantly to serve Enterprise user by as simple as adding a user to a group. When a cluster becomes obsolete, it can be safely removed without disrupting overall stability. Uniview IDP can be a perfect integration point of enterprise SSO, with OPENID or SAML too without requiring each workload cluster to support OPENID, neither SAML. The accomodation of dynamic can help Enterprise agility, esp. at early phase of OpenStack adoption when clusters are formed for different purposes. Technically implemented:
 
@@ -47,8 +47,23 @@ Uniview recent innovation (Beginning of 2026) well improved its capability of in
 
 **Security & Automation:** The platform simplifies critical security tasks such as enforcing Multi-Factor Authentication (MFA) and enabling self-service password resets, drastically reducing the burden on IT support teams. 
 
+## 5. Uniview Vault, a Solution of Native OpenStack workload Protection and Disaster Recovery
+
+Uniview Vault is an integration and add‑on layer of open source to accomplish an OpenStack‑native solution for workload protection, whether for disaster recovery or simply rolling a workload back to a prior state. In response to the industry call for well‑integrated, rather than highly complex, siloed, and proprietary backup solutions, Uniview Vault is a showcase of how open source has the potential to accomplish one of the most desirable features through an orchestrating wrapper. It features:
+
+Multi-tenancy and seamlessly integrated into user console
+
+Easiest in the industry without intrusive integration with OpenStack controller/compute
+
+Manageable, transparent, operable, and affordable — a perfect balance of open source and thin proprietary engineering
+
+Highest Standard of Source Application Consistency While Agentless to Ensures Best Recoverability
+
+Intelligent one‑click restore of workload groups
+
+
    
-## 5. Enhanced Day 2 Operations
+## 6. Enhanced Day 2 Operations
 
 Uniview emphasizes features for "Day 2" activities (ongoing operations), such as comprehensive monitoring, an integrated ticketing system, extensive dashboards, enriched metric visualizations, and enhanced Ceph and Kubernetes management interfaces. These premium features exceed standard open-source offerings.
 
