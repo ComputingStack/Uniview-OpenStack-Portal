@@ -13,7 +13,7 @@ Uniview provides a modern alternative to OpenStack Horizon and Skyline, focusing
 
 ## 2. Native OpenStack Billing Solution
    
-Uniview provides a production-ready billing solution tailored for OpenStack infrastructure. By interfacing directly with OpenStack’s RabbitMQ, Uniview captures every relevant event to ensure end-to-end metering accuracy. Its agile rating engine delivers near real-time data and transparent consumption trends to end users. 
+Uniview provides a production-ready billing solution tailored for OpenStack infrastructure. Supporting two most popular metering way by Cloudkitty or Uniview Collector which interfacs directly with OpenStack’s RabbitMQ, Uniview captures every relevant events to ensure end-to-end metering accuracy. Its agile rating engine delivers near real-time data and transparent consumption trends to end users. 
 For financial settlement, Uniview integrates with major payment gateways to automate charge-backs and invoices, supporting both pre-pay and post-pay models. While Uniview is a complete standalone solution, it offers the flexibility to integrate with community tools like Ceilometer, Gnocchi, or Cloudkitty to reduce operational costs without being mandatory. 
 By leveraging these standard components, Uniview avoids vendor lock-in and provides a sustainable billing framework for diverse services, including VMs, Swift object storage, Ceph RGW, and Database-as-a-Service (DBaaS).
 
