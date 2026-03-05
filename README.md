@@ -47,9 +47,9 @@ Uniview recent innovation (Beginning of 2026) well improved its capability of in
 
 **Security & Automation:** The platform simplifies critical security tasks such as enforcing Multi-Factor Authentication (MFA) and enabling self-service password resets, drastically reducing the burden on IT support teams. 
 
-## 5. Uniview Vault, a Solution of Native OpenStack workload Protection and Disaster Recovery
+## 5. Uniview Vault, a Solution of Native OpenStack Workload Backup and Disaster Recovery
 
-Uniview Vault is an integration and add‑on layer of open source to accomplish an OpenStack‑native solution for workload protection, whether for disaster recovery or simply rolling a workload back to a prior state. In response to the industry call for well‑integrated, rather than highly complex, siloed, and proprietary backup solutions, Uniview Vault is a showcase of how open source has the potential to accomplish one of the most desirable features through an orchestrating wrapper. It features:
+Uniview Vault is an backup and recovery solution over open source to accomplish an OpenStack‑native workload protection, whether for disaster recovery or simply rolling a workload back to a prior state. In response to the industry call for well‑integrated, rather than highly complex, siloed, and proprietary backup solutions, Uniview Vault is a showcase of how open source has the potential to accomplish one of the most desirable features through an orchestrating wrapper. It features:
 
 Multi-tenancy and seamlessly integrated into user console
 
@@ -59,7 +59,7 @@ Manageable, transparent, operable, and affordable — a perfect balance of open 
 
 Highest Standard of Source Application Consistency While Agentless to Ensures Best Recoverability
 
-Intelligent one‑click restore of workload groups
+One click to backup from one and recover to another OpenStack, even with nothing shared between clusters
 
 
    
