@@ -59,7 +59,7 @@ Uniview Vault is an backup and recovery solution over open source to accomplish 
 
 **High Consistency** Highest standard of source application consistency while agentless to ensures best becoverability
 
-**Cross OpenStack Cluster Restore** One click to backup from one and recover to another OpenStack, even with nothing shared between clusters
+**Recover Cross OpenStack Clusters** One click to backup from one and recover to another OpenStack, even with nothing shared between clusters
 
 
    
