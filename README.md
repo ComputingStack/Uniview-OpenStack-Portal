@@ -35,7 +35,7 @@ Uniview Clustering is known only solution that helps CSP to have multi-OpenStack
 
 Uniview recent innovation well improved its capability of integrating many various OpenStack clusters in plug and play mode, regardless of they share keystone or share nothing, the versions (e.g. one is newer, others are old), features, mutli-regions or single region. With Uniview-IDP, and Uniview-core together, a cluster can be added instantly to serve Enterprise user by as simple as adding a user to a group. When a cluster becomes obsolete, it can be safely removed without disrupting overall stability. Uniview IDP can be a perfect integration point of enterprise SSO, with OPENID or SAML too without requiring each workload cluster to support OPENID, neither SAML. The accomodation of dynamic can help Enterprise agility, esp. at early phase of OpenStack adoption when clusters are formed for different purposes. Technically implemented:
 
-**Abstraction:** Uniview provides a single entry point that unifies multiple, coexisting OpenStack clusters under one "pane of glass".
+**Abstraction:** One console, One credential, One-time sign in to access many nothing shared OpenStacks.
 
 **Hot-Swapping Infrastructure:** Administrators can add or decommission clusters as needed without affecting the user base. To the end user, the cloud remains a single, continuous service regardless of one backend OpenStack changes.
 
