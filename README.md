@@ -37,7 +37,7 @@ Uniview recent innovation well improved its capability of integrating many vario
 
 **Abstraction:** One console, One credential, One-time sign in to access many nothing shared OpenStacks.
 
-**Hot-Swapping Infrastructure:** Administrators can add or decommission clusters as needed without affecting the user base. To the end user, the cloud remains a single, continuous service regardless of one backend OpenStack changes.
+**Hot-Swapping Infrastructure:** Administrators can add or decommission clusters as needed without affecting the user base. To the end user, the cloud remains a single, continuous service regardless of one backend OpenStack changes. Migrating VM from one to another OpenStack is fully facilitated by one click like live migraiton by tenant user without need of admin permission.
 
 **Federated Identity:** Uniview integrates easily with enterprise identity providers like OpenID, Microsoft Entra ID, and Active Directory.
 
