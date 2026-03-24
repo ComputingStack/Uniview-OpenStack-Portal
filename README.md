@@ -31,7 +31,7 @@ Uniview also provides a pre-built Kubernetes Dashboard, delivering a seamless ex
 
 ## 4. Clustering of OpenStack into One Brand, One Portal, One-Sign in and One Bill
 
-Uniview Clustering is known only solution that helps CSP to have multi-OpenStack, multi-sites and multi-region solution in an easy way when they don't need share anything.  "Shared Nothing" matters to OpenStack to achieve high availability and total isolation. Plus Uniview vault workload-in-motion feature, instances at one OpenStack can be instantly migrated to 2nd OpenStack for disater recovery or workload migrating in near real time. All are multi-tenancy and no admin permission is needed.
+Uniview Clustering is known only solution that helps CSP to have multi-OpenStack, multi-sites and multi-region solution in an easy way when they don't need share anything.  "Shared Nothing" matters to OpenStack by its nature to avoid cascading failures and for easy evolving. But many custers have issues of usability when too many crednetials, too many user consoles, separate logining. Uniview has those well covered by one console, one credentials to access many clusters. Plus Uniview vault workload-in-motion feature, instances at one OpenStack can be instantly moved to 2nd OpenStack if it joined Uniview, for disater recovery or workload balancing in near real time. All are multi-tenancy and no admin permission is needed.
 
 Uniview recent innovation well improved its capability of integrating many various OpenStack clusters in plug and play mode, regardless of they share keystone or share nothing, the versions (e.g. one is newer, others are old), features, mutli-regions or single region. With Uniview-IDP, and Uniview-core together, a cluster can be added instantly to serve Enterprise user by as simple as adding a user to a group. When a cluster becomes obsolete, it can be safely removed without disrupting overall stability. Uniview IDP can be a perfect integration point of enterprise SSO, with OPENID or SAML too without requiring each workload cluster to support OPENID, neither SAML. The accomodation of dynamic can help Enterprise agility, esp. at early phase of OpenStack adoption when clusters are formed for different purposes. Technically implemented:
 
@@ -49,9 +49,9 @@ Uniview recent innovation well improved its capability of integrating many vario
 
 **Security & Automation:** The platform simplifies critical security tasks such as enforcing Multi-Factor Authentication (MFA) and enabling self-service password resets, drastically reducing the burden on IT support teams. 
 
-## 5. Uniview Vault, a Solution of Native OpenStack Workload Backup and Disaster Recovery
+## 5. Uniview Vault, Native OpenStack Workload Backup and Disaster Recovery Solution
 
-Uniview Vault is an backup and recovery solution over open source to accomplish an OpenStack‑native workload protection, whether for disaster recovery or simply rolling a workload back to a prior state. In response to the industry call for well‑integrated, rather than highly complex, siloed, and proprietary backup solutions, Uniview Vault is a showcase of how open source has the potential to accomplish one of the most desirable features through an orchestrating wrapper. It features:
+Uniview Vault is backup and recovery solution over open source to accomplish OpenStack‑native workload protection, whether for disaster recovery or simply rolling a workload back to a prior state. In response to the industry call for well‑integrated, rather than highly complex, siloed, and proprietary backup solutions, Uniview Vault is a showcase of how open source has the potential to accomplish one of the most desirable features through an orchestrating wrapper. It features:
 
 **Recover Cross OpenStack Clusters** One click to backup from one and recover to another OpenStack, even with nothing shared between clusters
 One click, yes, that what it literally is by one-click to have instances replicated and stood up in remote OpenStack. 
