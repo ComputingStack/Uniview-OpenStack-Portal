@@ -29,7 +29,7 @@ To streamline daily operations, Uniview offers a comprehensive metrics and monit
 Uniview also provides a pre-built Kubernetes Dashboard, delivering a seamless experience for managing both OpenStack and Kubernetes—the industry’s leading infrastructure technologies—within a single, cost-effective platform. By consolidating these expensive standalone features into one interface, Uniview ensures a premium, integrated experience without the burden of multi-vendor overhead. 
 
 
-## 4. Clustering of OpenStack into One Brand, One Portal, One-Sign in and One Bill
+## 4. Clustering of Multi-OpenStack into One Brand, One Portal, One-Sign in and One Bill
 
 Uniview Clustering is a pioneering solution in the industry that helps CSP to have multi-OpenStack, multi-sites and multi-regions solution in an easy way when they don't need share anything.  "Shared Nothing" and multiple Openstack are the most viable OpenStack model over its resiliency of surviving from cascading failures, in the meanwhile engineering and maintenance cost is lowest in comparison with shared components of keystone or database etc. But many custers have issues of usability when too many crednetials, too many user consoles, separate logining. Uniview has those well covered by one console, one credentials to access many clusters. Plus Uniview vault workload-in-motion feature, instances at one OpenStack can be instantly moved to 2nd OpenStack if it joined Uniview, for disater recovery or workload balancing in near real time. All are multi-tenancy and no admin permission is needed.
 
