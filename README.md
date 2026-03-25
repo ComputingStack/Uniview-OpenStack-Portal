@@ -51,7 +51,7 @@ Uniview recent innovation well improved its capability of integrating many vario
 
 ## 5. Uniview Vault, Native OpenStack Workload Backup and Disaster Recovery Solution
 
-Uniview Vault is backup and recovery solution over open source to accomplish OpenStack‑native workload protection, whether for disaster recovery or simply rolling a workload back to a prior state. In response to the industry call for well‑integrated, rather than highly complex, siloed, and proprietary backup solutions, Uniview Vault is a showcase of how open source has the potential to accomplish one of the most desirable features through an orchestrating wrapper. It features:
+Uniview Vault is backup and recovery solution over open source to accomplish OpenStack‑native workload protection, whether for disaster recovery or simply rolling a workload back to a prior state. In response to the industry call for well‑integrated, rather than highly complex, siloed, and proprietary backup solutions, Uniview Vault is a showcase of how open source has the potential to accomplish one of the most desirable features through an orchestrating wrapper. On backup and disaster recovery, Uniview Vault visions to turn the expensive DRS service today into a commodity alike service by making it consistent, low cost, frictionless (between users and cloud administrators). It features:
 
 **Recover Cross OpenStack Clusters** One click to backup from one and recover to another OpenStack, even with nothing shared between clusters
 One click, yes, that what it literally is by one-click to have instances replicated and stood up in remote OpenStack. 
