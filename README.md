@@ -1,4 +1,4 @@
-# Uniview - Comprehensive OpenStack User Panel and Dashboard, Billing, Clustering, Backup and Recovery Solution
+# Uniview - OpenStack Billing, User Panel and Dashboard, Clustering, Backup and Recovery Solution
 This repository serves as a central location for artifacts and documentation related to the deployment of the ComputingStack Uniview OpenStack Portal. It contains all necessary components for installation and ongoing operations, including Kubernetes deployment Helm charts, docker-compose files, configuration scripts, database schemas, and process documentation required to establish a fully functional cloud portal integration. The repository also functions as a ticketing system for logging and tracking issues and facilitating communication between the ComputingStack team and clients.
 
 Uniview is a comprehensive solution that offers multiple key solutions for OpenStack infrastructure, such as modern and responsive user panel and dashboards, public cloud Billing, clustering that OpenStack Joins OpenStack, workload protection by backup and disaster recovery. It is designed for both public and premium private clouds use cases.
