@@ -31,6 +31,7 @@
         auto_remove: false
         restart: yes
         restart_policy: always
+        # in case egress ip forwarding on host blocks connectivity, use host network by commenting out host_port to listen_port mapping, and uncomment network_mode: host
         ports:
           - "{{ host_port }}:{{ listen_port }}"
         #network_mode: host
