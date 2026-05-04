@@ -2,8 +2,10 @@ version: '3'
 services:
   collector:    
     image: computingstack/computingstack-collector:2025-january    
+    # When docker at a host has no egress due to dns, ufw or ip forwrd configration etc, you may choose host network, by uncommenting network mode to host, and comment out ports mapping between daesom host and listen port
     ports:
-    - "3007:3007"
+    - "{{ 3007  }}:{{ 3007 }}"
+    # network_mode: host    
     healthcheck:
       test: curl --fail http://localhost:3007/getVersion || exit 1
       interval: 60s
