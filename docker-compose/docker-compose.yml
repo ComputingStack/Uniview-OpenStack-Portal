@@ -2,8 +2,12 @@ version: '3'
 services:
   uniview1:
     image: computingstack/uniview-openstack-frontends:latest
+    # When docker at a host has no egress due to dns, ufw or ip forwrd configration etc, you may choose host network, by uncommenting network mode to host, and comment out ports mapping between daesom host and listen port
     ports:
-    - "3006:3006"
+    - "{{ daemon_listen_port  }}:{{ listen_port }}"
+    # network_mode: host
+    ports:
+    - "3009:3009"   # port number must be matched to below daemon_listen_port value
     healthcheck:
       test: curl --fail http://localhost:3006/getVersion || exit 1
       interval: 60s
@@ -25,7 +29,8 @@ services:
       os_auth_pass: intos
       os_auth_project: uniview
       uniview_key: xxxxx
-      daemon_listen_port: "3006"
+      # daemon_list_port value must be matched to above port mapping
+      daemon_listen_port: "3009"  
       ceph_api_url: http://1.2.3.4:8090
       ceph_api_user: computingstack
       ceph_api_pass: your_pass
