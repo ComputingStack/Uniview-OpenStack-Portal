@@ -48,8 +48,10 @@
         log_options:
           max-size: "50m"      # Maximum size of a single log file
           max-file: "4"        
+        #When docker at a host has no egress due to dns, ufw or ip forwrd configration etc, you may choose host network, by uncommenting network mode to host, and comment out ports mapping between daesom host and listen port
         ports:
           - "{{ daemon_listen_port  }}:{{ listen_port }}"
+        #network_mode: host
         env:
           db_host: "{{ db_host }}"
           db_user: "{{ db_user }}"
