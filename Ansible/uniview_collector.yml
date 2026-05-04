@@ -17,6 +17,7 @@
     context: "dev"
     install_name: "prime"
     listen_port: "3007"
+    host_port: "{{ host_port | default('3007') }}"
   tasks:
     #- name: print out info
     #  debug: msg={{ groups['collector'][0]  }}
@@ -31,7 +32,7 @@
         restart: yes
         restart_policy: always
         ports:
-          - "3007:{{ listen_port }}"
+          - "{{ host_port }}:{{ listen_port }}"
         #network_mode: host
         env:
           db_host: "{{ db_host }}"
