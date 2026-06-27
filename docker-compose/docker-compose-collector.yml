@@ -25,6 +25,8 @@ services:
       transport_url_nova: "rabbit://user:pass@192.168.1.17:5672"
       transport_url_neutron: "rabbit://user:pass@192.168.1.17:5672"
       transport_url_cinder: "rabbit://user:pass@192.168.1.17:5672"
+      transport_url_octavia: "rabbit://user:pass@192.168.1.17:5672"
+      transport_url_magnum: "rabbit://user:pass@192.168.1.17:5672"
       concurrent_sessions: 3
       region: RegionOne
       context: uniview
