@@ -3,6 +3,8 @@ This repository serves as a central location for artifacts and documentation rel
 
 Uniview is a comprehensive solution that offers multiple key solutions for OpenStack infrastructure, such as modern and responsive user panel and dashboards, public cloud Billing, clustering that OpenStack Joins OpenStack, workload protection by backup and disaster recovery. It is designed for both public and premium private clouds use cases.
 
+It's worth to mention Uniview lately (Mid-2026) extended the platform to be comprehensive Kubernetes solution too, named as Uniview Pod Hub, polished for AI use cases, with one platform offering cluster as a service by CAPI, multi-tenant K8s with namespace as a service, Pod as a service. Uniview Kubernetes solution can run alone with or without OpenStack. Multi-tenant solution of Uniview has been visioned to enable a fast AI workload deploy for AI developers with no Kubernetes skill required, and GPU slicing and billing to minutes without paying for whole cluster. Uniview platform is ready to onboard those AI template such as Jupyter, Kimi k3, vLlama, Qwen at a click. 
+
 Key Features and Missions
 
 
